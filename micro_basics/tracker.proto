@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package tracker;
+// Опис сервісу
+service Tracker {
+  rpc LogEntry (LogRequest) returns (LogResponse) {}
+  rpc GetEntries (Empty) returns (EntriesResponse) {}
+}
+// Повідомлення для логування
+message LogRequest {
+  string key = 1;
+  string data = 2;
+}
+// Відповідь на логування
+message LogResponse {
+  string status = 1;
+}
+// Порожнє повідомлення для GET
+message Empty {}
+// Відповідь із усіма записами
+message EntriesResponse {
+  string entries = 1;
+}
