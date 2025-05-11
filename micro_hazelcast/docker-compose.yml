@@ -1,0 +1,97 @@
+version: '3.8'
+
+services:
+  hazelcast1:
+    image: hazelcast/hazelcast:latest
+    ports:
+      - "5701:5701"
+    environment:
+      - HZ_CLUSTERNAME=dev
+      - JAVA_OPTS=-Dhazelcast.logging.type=slf4j
+
+  hazelcast2:
+    image: hazelcast/hazelcast:latest
+    ports:
+      - "5702:5701"
+    environment:
+      - HZ_CLUSTERNAME=dev
+      - JAVA_OPTS=-Dhazelcast.logging.type=slf4j
+
+  hazelcast3:
+    image: hazelcast/hazelcast:latest
+    ports:
+      - "5703:5701"
+    environment:
+      - HZ_CLUSTERNAME=dev
+      - JAVA_OPTS=-Dhazelcast.logging.type=slf4j
+
+  config-server:
+    build:
+      context: ./config-server
+    ports:
+      - "8888:8888"
+    command: ["python", "config-server.py", "services.json"]
+
+  messages-service:
+    build:
+      context: ./messages-service
+    ports:
+      - "8882:8882"
+    depends_on:
+      - config-server
+
+  facade-service:
+    build:
+      context: ./facade-service
+    ports:
+      - "8880:8880"
+    depends_on:
+      - config-server
+      - hazelcast1
+      - hazelcast2
+      - hazelcast3
+
+  logging1:
+    build:
+      context: ./logging-service
+    environment:
+      - INSTANCE_ID=one
+      - PORT=8881
+    ports:
+      - "8881:8881"
+    depends_on:
+      - config-server
+      - hazelcast1
+      - hazelcast2
+      - hazelcast3
+    command: ["python", "logging-service.py"]
+
+  logging2:
+    build:
+      context: ./logging-service
+    environment:
+      - INSTANCE_ID=two
+      - PORT=8883
+    ports:
+      - "8883:8883"
+    depends_on:
+      - config-server
+      - hazelcast1
+      - hazelcast2
+      - hazelcast3
+    command: ["python", "logging-service.py"]
+
+  logging3:
+    build:
+      context: ./logging-service
+    environment:
+      - INSTANCE_ID=three
+      - PORT=8885
+    ports:
+      - "8885:8885"
+    depends_on:
+      - config-server
+      - hazelcast1
+      - hazelcast2
+      - hazelcast3
+    command: ["python", "logging-service.py"]
