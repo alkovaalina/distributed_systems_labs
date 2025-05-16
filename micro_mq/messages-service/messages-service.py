@@ -17,7 +17,7 @@ def consume():
         try:
             consumer = KafkaConsumer(
                 "messages",
-                bootstrap_servers=["kafka1:9092", "kafka2:9093", "kafka3:9094"],  # Список усіх брокерів
+                bootstrap_servers=["kafka1:9092", "kafka2:9093", "kafka3:9094"],
                 auto_offset_reset="earliest",
                 #group_id=f"group-{INSTANCE_ID}",
                 group_id="group-messages",

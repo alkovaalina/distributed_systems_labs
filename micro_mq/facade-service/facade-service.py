@@ -54,11 +54,8 @@ def send_to_random_instance(service_name, path, method="GET", data=None):
 def post_entry():
     msg = request.json.get("msg")
     if msg:
-        # Відправка до Kafka
         producer.send(KAFKA_TOPIC, {"msg": msg})
         print(f"[Facade] Відправлено до Kafka: {msg}")
-
-        # Відправка до випадкового logging-service
         response = send_to_random_instance("logging-service", "/tracker", method="POST", data={"msg": msg})
         if "error" in response:
             print(f"[Facade] Не вдалося надіслати до logging-service: {response['error']}")
@@ -77,15 +74,10 @@ def notify():
 
 @app.route("/combined", methods=["GET"])
 def get_combined_messages():
-    # Отримання повідомлень з випадкового logging-service
     logging_response = send_to_random_instance("logging-service", "/tracker", method="GET")
     logging_messages = logging_response.get("messages", []) if "error" not in logging_response else []
-
-    # Отримання повідомлень з випадкового messages-service
     messages_response = send_to_random_instance("messages-service", "/messages", method="GET")
     messages_service_messages = messages_response.get("messages", []) if "error" not in messages_response else []
-
-    # Об’єднання і видалення дублікатів
     combined_messages = list(set(logging_messages + messages_service_messages))
     return jsonify({"messages": combined_messages})
 
