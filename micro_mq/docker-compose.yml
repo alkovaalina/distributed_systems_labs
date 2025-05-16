@@ -19,7 +19,7 @@ services:
       KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka1:9092
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 3
       KAFKA_DEFAULT_REPLICATION_FACTOR: 3
-      KAFKA_AUTO_CREATE_TOPICS_ENABLE: "false"  # Вимкнено автоскворення тем
+      KAFKA_AUTO_CREATE_TOPICS_ENABLE: "false"
     ports:
       - "9092:9092"
 
@@ -64,7 +64,6 @@ services:
       sleep 10 &&
       kafka-topics --create --topic messages --bootstrap-server kafka1:9092 --partitions 2 --replication-factor 3 --if-not-exists &&
       echo 'Тему messages створено з 2 партіями'"
-    # Контейнер завершує роботу після виконання
 
   # --- Hazelcast nodes
   hazelcast1:
