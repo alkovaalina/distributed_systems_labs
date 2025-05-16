@@ -1,0 +1,152 @@
+version: "3.8"
+services:
+  # --- Zookeeper
+  zookeeper:
+    image: confluentinc/cp-zookeeper:7.6.0
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+    ports:
+      - "2181:2181"
+
+  # --- Kafka брокери
+  kafka1:
+    image: confluentinc/cp-kafka:7.6.0
+    depends_on:
+      - zookeeper
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka1:9092
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 3
+      KAFKA_DEFAULT_REPLICATION_FACTOR: 3
+      KAFKA_AUTO_CREATE_TOPICS_ENABLE: "false"  # Вимкнено автоскворення тем
+    ports:
+      - "9092:9092"
+
+  kafka2:
+    image: confluentinc/cp-kafka:7.6.0
+    depends_on:
+      - zookeeper
+    environment:
+      KAFKA_BROKER_ID: 2
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka2:9093
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 3
+      KAFKA_DEFAULT_REPLICATION_FACTOR: 3
+      KAFKA_AUTO_CREATE_TOPICS_ENABLE: "false"
+    ports:
+      - "9093:9093"
+
+  kafka3:
+    image: confluentinc/cp-kafka:7.6.0
+    depends_on:
+      - zookeeper
+    environment:
+      KAFKA_BROKER_ID: 3
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka3:9094
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 3
+      KAFKA_DEFAULT_REPLICATION_FACTOR: 3
+      KAFKA_AUTO_CREATE_TOPICS_ENABLE: "false"
+    ports:
+      - "9094:9094"
+
+  # --- Ініціалізація Kafka теми
+  kafka-init:
+    image: confluentinc/cp-kafka:7.6.0
+    depends_on:
+      - kafka1
+      - kafka2
+      - kafka3
+    entrypoint: ["/bin/sh", "-c"]
+    command: |
+      "echo 'Чекаємо, поки Kafka брокери будуть готові...' &&
+      sleep 10 &&
+      kafka-topics --create --topic messages --bootstrap-server kafka1:9092 --partitions 2 --replication-factor 3 --if-not-exists &&
+      echo 'Тему messages створено з 2 партіями'"
+    # Контейнер завершує роботу після виконання
+
+  # --- Hazelcast nodes
+  hazelcast1:
+    image: hazelcast/hazelcast:5.3
+    ports:
+      - "5701:5701"
+
+  hazelcast2:
+    image: hazelcast/hazelcast:5.3
+    ports:
+      - "5702:5701"
+
+  hazelcast3:
+    image: hazelcast/hazelcast:5.3
+    ports:
+      - "5703:5701"
+
+  # --- Config server
+  config-server:
+    build:
+      context: ./config-server
+    command: ["python", "config-server.py", "services.json"]
+    ports:
+      - "8888:8888"
+
+  # --- Facade service
+  facade-service:
+    build:
+      context: ./facade-service
+    ports:
+      - "8880:8880"
+    depends_on:
+      - kafka1
+      - config-server
+
+  # --- Messages services (2 екземпляри)
+  messages-service1:
+    build:
+      context: ./messages-service
+    environment:
+      - INSTANCE_ID=msg1
+      - PORT=8890
+    ports:
+      - "8890:8890"
+    depends_on:
+      - kafka1
+
+  messages-service2:
+    build:
+      context: ./messages-service
+    environment:
+      - INSTANCE_ID=msg2
+      - PORT=8891
+    ports:
+      - "8891:8891"
+    depends_on:
+      - kafka1
+
+  # --- Logging services (3 екземпляри)
+  logging-service1:
+    build:
+      context: ./logging-service
+    environment:
+      - INSTANCE_ID=log1
+      - PORT=8881
+    ports:
+      - "8881:8881"
+
+  logging-service2:
+    build:
+      context: ./logging-service
+    environment:
+      - INSTANCE_ID=log2
+      - PORT=8882
+    ports:
+      - "8882:8882"
+
+  logging-service3:
+    build:
+      context: ./logging-service
+    environment:
+      - INSTANCE_ID=log3
+      - PORT=8883
+    ports:
+      - "8883:8883"

@@ -1,0 +1,4 @@
+{
+  "messages-service": ["http://messages-service1:8890", "http://messages-service2:8891"],
+  "logging-service": ["http://logging-service1:8881", "http://logging-service2:8882", "http://logging-service3:8883"]
+}
