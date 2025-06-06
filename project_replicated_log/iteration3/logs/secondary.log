@@ -1,0 +1,649 @@
+2025-06-06 13:04:50,686 - INFO - Starting up, syncing with master
+2025-06-06 13:04:50,733 - INFO - HTTP Request: POST http://master:8000/sync "HTTP/1.1 200 OK"
+2025-06-06 13:04:50,734 - INFO - Sync completed, max_display_order=0
+2025-06-06 13:04:50,941 - INFO - Starting up, syncing with master
+2025-06-06 13:04:50,980 - INFO - HTTP Request: POST http://master:8000/sync "HTTP/1.1 200 OK"
+2025-06-06 13:04:50,981 - INFO - Sync completed, max_display_order=0
+2025-06-06 13:05:28,768 - INFO - Received replication request with message_id: 22f1bdf2-4665-4f32-b136-f5090037fc6a, content: Test w=1, order: 1
+2025-06-06 13:05:28,768 - INFO - Received replication request with message_id: 22f1bdf2-4665-4f32-b136-f5090037fc6a, content: Test w=1, order: 1
+2025-06-06 13:05:30,769 - INFO - Message replicated: 22f1bdf2-4665-4f32-b136-f5090037fc6a, Test w=1, order=1
+2025-06-06 13:05:30,769 - INFO - Message replicated: 22f1bdf2-4665-4f32-b136-f5090037fc6a, Test w=1, order=1
+2025-06-06 13:05:30,770 - WARNING - Generating random 500 error for message_id: 22f1bdf2-4665-4f32-b136-f5090037fc6a
+2025-06-06 13:05:31,774 - INFO - Received GET request for replicated messages
+2025-06-06 13:05:31,778 - INFO - Received GET request for replicated messages
+2025-06-06 13:05:31,814 - INFO - Received replication request with message_id: 22f1bdf2-4665-4f32-b136-f5090037fc6a, content: Test w=1, order: 1
+2025-06-06 13:05:31,814 - INFO - Message with message_id: 22f1bdf2-4665-4f32-b136-f5090037fc6a already exists, skipping
+2025-06-06 13:05:31,932 - INFO - Received replication request with message_id: 64c99638-41cf-4946-82b5-dd2404a8aa69, content: Test w=2, order: 2
+2025-06-06 13:05:33,933 - INFO - Message replicated: 64c99638-41cf-4946-82b5-dd2404a8aa69, Test w=2, order=2
+2025-06-06 13:05:33,968 - INFO - Received replication request with message_id: 64c99638-41cf-4946-82b5-dd2404a8aa69, content: Test w=2, order: 2
+2025-06-06 13:05:33,969 - INFO - Received GET request for replicated messages
+2025-06-06 13:05:33,973 - INFO - Received GET request for replicated messages
+2025-06-06 13:05:35,969 - INFO - Message replicated: 64c99638-41cf-4946-82b5-dd2404a8aa69, Test w=2, order=2
+2025-06-06 13:05:36,991 - INFO - Received GET request for replicated messages
+2025-06-06 13:05:37,112 - INFO - Received replication request with message_id: 8422b750-b5d6-4ea3-ad4e-b0bc0b0722ad, content: Test w=3, order: 3
+2025-06-06 13:05:39,112 - INFO - Message replicated: 8422b750-b5d6-4ea3-ad4e-b0bc0b0722ad, Test w=3, order=3
+2025-06-06 13:05:39,113 - WARNING - Generating random 500 error for message_id: 8422b750-b5d6-4ea3-ad4e-b0bc0b0722ad
+2025-06-06 13:05:40,147 - INFO - Received replication request with message_id: 8422b750-b5d6-4ea3-ad4e-b0bc0b0722ad, content: Test w=3, order: 3
+2025-06-06 13:05:40,148 - INFO - Message with message_id: 8422b750-b5d6-4ea3-ad4e-b0bc0b0722ad already exists, skipping
+2025-06-06 13:05:40,194 - INFO - Received replication request with message_id: 8422b750-b5d6-4ea3-ad4e-b0bc0b0722ad, content: Test w=3, order: 3
+2025-06-06 13:05:42,194 - INFO - Message replicated: 8422b750-b5d6-4ea3-ad4e-b0bc0b0722ad, Test w=3, order=3
+2025-06-06 13:05:42,540 - INFO - Received replication request with message_id: c93db82c-a1cc-4013-b015-8c986fcc26aa, content: Duplicate test, order: 4
+2025-06-06 13:05:44,541 - INFO - Message replicated: c93db82c-a1cc-4013-b015-8c986fcc26aa, Duplicate test, order=4
+2025-06-06 13:05:44,582 - INFO - Received replication request with message_id: c93db82c-a1cc-4013-b015-8c986fcc26aa, content: Duplicate test, order: 4
+2025-06-06 13:05:46,582 - INFO - Message replicated: c93db82c-a1cc-4013-b015-8c986fcc26aa, Duplicate test, order=4
+2025-06-06 13:05:49,610 - INFO - Received GET request for replicated messages
+2025-06-06 13:05:49,616 - INFO - Received GET request for replicated messages
+2025-06-06 13:05:49,751 - INFO - Received replication request with message_id: 7cdc7fe6-8ae2-4b47-8377-e820acb67ed8, content: First, order: 5
+2025-06-06 13:05:51,751 - INFO - Message replicated: 7cdc7fe6-8ae2-4b47-8377-e820acb67ed8, First, order=5
+2025-06-06 13:05:51,785 - INFO - Received replication request with message_id: 7cdc7fe6-8ae2-4b47-8377-e820acb67ed8, content: First, order: 5
+2025-06-06 13:05:53,785 - INFO - Message replicated: 7cdc7fe6-8ae2-4b47-8377-e820acb67ed8, First, order=5
+2025-06-06 13:05:53,822 - INFO - Received replication request with message_id: 1955b8d4-50c4-4e94-b750-5b624f542bff, content: Second, order: 6
+2025-06-06 13:05:55,823 - INFO - Message replicated: 1955b8d4-50c4-4e94-b750-5b624f542bff, Second, order=6
+2025-06-06 13:05:55,855 - INFO - Received replication request with message_id: 1955b8d4-50c4-4e94-b750-5b624f542bff, content: Second, order: 6
+2025-06-06 13:05:57,856 - INFO - Message replicated: 1955b8d4-50c4-4e94-b750-5b624f542bff, Second, order=6
+2025-06-06 13:05:57,896 - INFO - Received replication request with message_id: fa7ecfe5-0e2f-4475-9013-73f72b191920, content: Third, order: 7
+2025-06-06 13:05:59,896 - INFO - Message replicated: fa7ecfe5-0e2f-4475-9013-73f72b191920, Third, order=7
+2025-06-06 13:05:59,938 - INFO - Received replication request with message_id: fa7ecfe5-0e2f-4475-9013-73f72b191920, content: Third, order: 7
+2025-06-06 13:06:01,939 - INFO - Message replicated: fa7ecfe5-0e2f-4475-9013-73f72b191920, Third, order=7
+2025-06-06 13:06:04,960 - INFO - Received GET request for replicated messages
+2025-06-06 13:06:04,969 - INFO - Received GET request for replicated messages
+2025-06-06 13:06:06,411 - INFO - Received replication request with message_id: c0949417-3a38-467d-b617-74960dd56bea, content: Msg1, order: 8
+2025-06-06 13:06:06,412 - INFO - Received replication request with message_id: 6e788650-ce4b-476a-8195-fcf325ff39ad, content: Msg2, order: 9
+2025-06-06 13:06:08,412 - INFO - Message replicated: c0949417-3a38-467d-b617-74960dd56bea, Msg1, order=8
+2025-06-06 13:06:08,413 - WARNING - Generating random 500 error for message_id: c0949417-3a38-467d-b617-74960dd56bea
+2025-06-06 13:06:08,414 - INFO - Message replicated: 6e788650-ce4b-476a-8195-fcf325ff39ad, Msg2, order=9
+2025-06-06 13:06:10,211 - INFO - Received replication request with message_id: 26466cb2-a4c7-4d15-95d1-ded28eb488d4, content: Msg4, order: 10
+2025-06-06 13:06:10,219 - INFO - Received replication request with message_id: fa5151c4-031d-4e83-8511-7f1cddccdb6f, content: Msg3, order: 11
+2025-06-06 13:06:10,222 - INFO - Received replication request with message_id: c0949417-3a38-467d-b617-74960dd56bea, content: Msg1, order: 11
+2025-06-06 13:06:10,223 - INFO - Message with message_id: c0949417-3a38-467d-b617-74960dd56bea already exists, skipping
+2025-06-06 13:06:10,508 - INFO - Starting up, syncing with master
+2025-06-06 13:06:10,572 - INFO - HTTP Request: POST http://master:8000/sync "HTTP/1.1 200 OK"
+2025-06-06 13:06:10,573 - INFO - Synced message: 22f1bdf2-4665-4f32-b136-f5090037fc6a, Test w=1, order=1
+2025-06-06 13:06:10,574 - INFO - Synced message: 64c99638-41cf-4946-82b5-dd2404a8aa69, Test w=2, order=2
+2025-06-06 13:06:10,575 - INFO - Synced message: 8422b750-b5d6-4ea3-ad4e-b0bc0b0722ad, Test w=3, order=3
+2025-06-06 13:06:10,575 - INFO - Synced message: c93db82c-a1cc-4013-b015-8c986fcc26aa, Duplicate test, order=4
+2025-06-06 13:06:10,576 - INFO - Synced message: 7cdc7fe6-8ae2-4b47-8377-e820acb67ed8, First, order=5
+2025-06-06 13:06:10,576 - INFO - Synced message: 1955b8d4-50c4-4e94-b750-5b624f542bff, Second, order=6
+2025-06-06 13:06:10,576 - INFO - Synced message: fa7ecfe5-0e2f-4475-9013-73f72b191920, Third, order=7
+2025-06-06 13:06:10,577 - INFO - Synced message: c0949417-3a38-467d-b617-74960dd56bea, Msg1, order=8
+2025-06-06 13:06:10,577 - INFO - Synced message: 6e788650-ce4b-476a-8195-fcf325ff39ad, Msg2, order=9
+2025-06-06 13:06:10,578 - INFO - Synced message: 26466cb2-a4c7-4d15-95d1-ded28eb488d4, Msg4, order=10
+2025-06-06 13:06:10,579 - INFO - Synced message: fa5151c4-031d-4e83-8511-7f1cddccdb6f, Msg3, order=11
+2025-06-06 13:06:10,579 - INFO - Sync completed, max_display_order=11
+2025-06-06 13:06:11,287 - INFO - Received replication request with message_id: c0949417-3a38-467d-b617-74960dd56bea, content: Msg1, order: 11
+2025-06-06 13:06:11,288 - INFO - Message with message_id: c0949417-3a38-467d-b617-74960dd56bea already exists, skipping
+2025-06-06 13:06:11,290 - INFO - Received replication request with message_id: 26466cb2-a4c7-4d15-95d1-ded28eb488d4, content: Msg4, order: 11
+2025-06-06 13:06:11,294 - INFO - Message with message_id: 26466cb2-a4c7-4d15-95d1-ded28eb488d4 already exists, skipping
+2025-06-06 13:06:12,214 - INFO - Message replicated: 26466cb2-a4c7-4d15-95d1-ded28eb488d4, Msg4, order=10
+2025-06-06 13:06:12,221 - INFO - Message replicated: fa5151c4-031d-4e83-8511-7f1cddccdb6f, Msg3, order=11
+2025-06-06 13:06:12,258 - INFO - Received replication request with message_id: fa5151c4-031d-4e83-8511-7f1cddccdb6f, content: Msg3, order: 11
+2025-06-06 13:06:12,258 - INFO - Message with message_id: fa5151c4-031d-4e83-8511-7f1cddccdb6f already exists, skipping
+2025-06-06 13:06:13,367 - INFO - Received replication request with message_id: 6e788650-ce4b-476a-8195-fcf325ff39ad, content: Msg2, order: 11
+2025-06-06 13:06:13,368 - INFO - Message with message_id: 6e788650-ce4b-476a-8195-fcf325ff39ad already exists, skipping
+2025-06-06 13:11:31,398 - INFO - Starting up, syncing with master
+2025-06-06 13:11:31,442 - INFO - HTTP Request: POST http://master:8000/sync "HTTP/1.1 200 OK"
+2025-06-06 13:11:31,443 - INFO - Sync completed, max_display_order=0
+2025-06-06 13:11:31,629 - INFO - Starting up, syncing with master
+2025-06-06 13:11:31,667 - INFO - HTTP Request: POST http://master:8000/sync "HTTP/1.1 200 OK"
+2025-06-06 13:11:31,668 - INFO - Sync completed, max_display_order=0
+2025-06-06 13:12:22,261 - INFO - Messages cleared
+2025-06-06 13:12:22,268 - INFO - Messages cleared
+2025-06-06 13:12:22,383 - INFO - Received replication request with message_id: c4a550cc-72e5-45f0-9697-05d117b7c4e1, content: Test w=1, order: 1
+2025-06-06 13:12:22,383 - INFO - Received replication request with message_id: c4a550cc-72e5-45f0-9697-05d117b7c4e1, content: Test w=1, order: 1
+2025-06-06 13:12:24,383 - INFO - Message replicated: c4a550cc-72e5-45f0-9697-05d117b7c4e1, Test w=1, order=1
+2025-06-06 13:12:24,384 - INFO - Message replicated: c4a550cc-72e5-45f0-9697-05d117b7c4e1, Test w=1, order=1
+2025-06-06 13:12:25,391 - INFO - Received GET request for replicated messages
+2025-06-06 13:12:25,396 - INFO - Received GET request for replicated messages
+2025-06-06 13:12:25,426 - INFO - Messages cleared
+2025-06-06 13:12:25,434 - INFO - Messages cleared
+2025-06-06 13:12:25,518 - INFO - Received replication request with message_id: fbd689d9-fcbb-4e4a-9543-7973cfbfd90d, content: Test w=2, order: 1
+2025-06-06 13:12:27,519 - INFO - Message replicated: fbd689d9-fcbb-4e4a-9543-7973cfbfd90d, Test w=2, order=1
+2025-06-06 13:12:27,554 - INFO - Received replication request with message_id: fbd689d9-fcbb-4e4a-9543-7973cfbfd90d, content: Test w=2, order: 1
+2025-06-06 13:12:27,556 - INFO - Received GET request for replicated messages
+2025-06-06 13:12:27,559 - INFO - Received GET request for replicated messages
+2025-06-06 13:12:29,555 - INFO - Message replicated: fbd689d9-fcbb-4e4a-9543-7973cfbfd90d, Test w=2, order=1
+2025-06-06 13:12:30,565 - INFO - Received GET request for replicated messages
+2025-06-06 13:12:30,594 - INFO - Messages cleared
+2025-06-06 13:12:30,600 - INFO - Messages cleared
+2025-06-06 13:12:30,684 - INFO - Received replication request with message_id: 02f1637e-f844-437d-8490-c51fd1abd9f5, content: Test w=3, order: 1
+2025-06-06 13:12:32,683 - INFO - Message replicated: 02f1637e-f844-437d-8490-c51fd1abd9f5, Test w=3, order=1
+2025-06-06 13:12:32,684 - WARNING - Generating random 500 error for message_id: 02f1637e-f844-437d-8490-c51fd1abd9f5
+2025-06-06 13:12:33,719 - INFO - Received replication request with message_id: 02f1637e-f844-437d-8490-c51fd1abd9f5, content: Test w=3, order: 1
+2025-06-06 13:12:33,719 - INFO - Message with message_id: 02f1637e-f844-437d-8490-c51fd1abd9f5 already exists, skipping
+2025-06-06 13:12:33,753 - INFO - Received replication request with message_id: 02f1637e-f844-437d-8490-c51fd1abd9f5, content: Test w=3, order: 1
+2025-06-06 13:12:35,754 - INFO - Message replicated: 02f1637e-f844-437d-8490-c51fd1abd9f5, Test w=3, order=1
+2025-06-06 13:12:35,755 - WARNING - Generating random 500 error for message_id: 02f1637e-f844-437d-8490-c51fd1abd9f5
+2025-06-06 13:12:36,789 - INFO - Received replication request with message_id: 02f1637e-f844-437d-8490-c51fd1abd9f5, content: Test w=3, order: 1
+2025-06-06 13:12:36,790 - INFO - Message with message_id: 02f1637e-f844-437d-8490-c51fd1abd9f5 already exists, skipping
+2025-06-06 13:12:36,806 - INFO - Received GET request for replicated messages
+2025-06-06 13:12:36,813 - INFO - Received GET request for replicated messages
+2025-06-06 13:12:36,852 - INFO - Messages cleared
+2025-06-06 13:12:36,865 - INFO - Messages cleared
+2025-06-06 13:12:36,963 - INFO - Received replication request with message_id: 4aae7563-e91a-4f35-8d21-127321b2fcca, content: Duplicate test, order: 1
+2025-06-06 13:12:38,964 - INFO - Message replicated: 4aae7563-e91a-4f35-8d21-127321b2fcca, Duplicate test, order=1
+2025-06-06 13:12:38,995 - INFO - Received replication request with message_id: 4aae7563-e91a-4f35-8d21-127321b2fcca, content: Duplicate test, order: 1
+2025-06-06 13:12:40,996 - INFO - Message replicated: 4aae7563-e91a-4f35-8d21-127321b2fcca, Duplicate test, order=1
+2025-06-06 13:12:44,026 - INFO - Received GET request for replicated messages
+2025-06-06 13:12:44,032 - INFO - Received GET request for replicated messages
+2025-06-06 13:12:44,062 - INFO - Messages cleared
+2025-06-06 13:12:44,068 - INFO - Messages cleared
+2025-06-06 13:12:44,154 - INFO - Received replication request with message_id: a0ade966-0695-4bdf-90e4-37ffc26caf0c, content: First, order: 1
+2025-06-06 13:12:46,155 - INFO - Message replicated: a0ade966-0695-4bdf-90e4-37ffc26caf0c, First, order=1
+2025-06-06 13:12:46,155 - WARNING - Generating random 500 error for message_id: a0ade966-0695-4bdf-90e4-37ffc26caf0c
+2025-06-06 13:12:47,190 - INFO - Received replication request with message_id: a0ade966-0695-4bdf-90e4-37ffc26caf0c, content: First, order: 1
+2025-06-06 13:12:47,190 - INFO - Message with message_id: a0ade966-0695-4bdf-90e4-37ffc26caf0c already exists, skipping
+2025-06-06 13:12:47,223 - INFO - Received replication request with message_id: a0ade966-0695-4bdf-90e4-37ffc26caf0c, content: First, order: 1
+2025-06-06 13:12:49,223 - INFO - Message replicated: a0ade966-0695-4bdf-90e4-37ffc26caf0c, First, order=1
+2025-06-06 13:12:49,380 - INFO - Messages cleared
+2025-06-06 13:12:49,387 - INFO - Messages cleared
+2025-06-06 13:12:50,574 - INFO - Received replication request with message_id: fa7b20d9-9af7-4048-8973-498d6a82a9cf, content: Msg1, order: 1
+2025-06-06 13:12:50,575 - INFO - Received replication request with message_id: 71582666-867f-4cea-a167-6a2aa43623c1, content: Msg2, order: 2
+2025-06-06 13:12:52,574 - INFO - Message replicated: fa7b20d9-9af7-4048-8973-498d6a82a9cf, Msg1, order=1
+2025-06-06 13:12:52,575 - INFO - Message replicated: 71582666-867f-4cea-a167-6a2aa43623c1, Msg2, order=2
+2025-06-06 13:12:52,576 - WARNING - Generating random 500 error for message_id: 71582666-867f-4cea-a167-6a2aa43623c1
+2025-06-06 13:12:53,609 - INFO - Received replication request with message_id: 71582666-867f-4cea-a167-6a2aa43623c1, content: Msg2, order: 2
+2025-06-06 13:12:53,610 - INFO - Message with message_id: 71582666-867f-4cea-a167-6a2aa43623c1 already exists, skipping
+2025-06-06 13:12:54,396 - INFO - Received replication request with message_id: 81a7faa4-d8e0-4cbc-b9ea-95ff557a8b1c, content: Msg4, order: 3
+2025-06-06 13:12:54,403 - INFO - Received replication request with message_id: d63b03ae-bd5d-44f4-820a-f69212aa2472, content: Msg3, order: 4
+2025-06-06 13:12:55,080 - INFO - Starting up, syncing with master
+2025-06-06 13:12:55,120 - INFO - HTTP Request: POST http://master:8000/sync "HTTP/1.1 200 OK"
+2025-06-06 13:12:55,121 - INFO - Synced message: fa7b20d9-9af7-4048-8973-498d6a82a9cf, Msg1, order=1
+2025-06-06 13:12:55,121 - INFO - Synced message: 71582666-867f-4cea-a167-6a2aa43623c1, Msg2, order=2
+2025-06-06 13:12:55,121 - INFO - Synced message: 81a7faa4-d8e0-4cbc-b9ea-95ff557a8b1c, Msg4, order=3
+2025-06-06 13:12:55,122 - INFO - Synced message: d63b03ae-bd5d-44f4-820a-f69212aa2472, Msg3, order=4
+2025-06-06 13:12:55,122 - INFO - Sync completed, max_display_order=4
+2025-06-06 13:12:55,450 - INFO - Received replication request with message_id: fa7b20d9-9af7-4048-8973-498d6a82a9cf, content: Msg1, order: 4
+2025-06-06 13:12:55,450 - INFO - Message with message_id: fa7b20d9-9af7-4048-8973-498d6a82a9cf already exists, skipping
+2025-06-06 13:12:55,452 - INFO - Received replication request with message_id: 81a7faa4-d8e0-4cbc-b9ea-95ff557a8b1c, content: Msg4, order: 4
+2025-06-06 13:12:55,452 - INFO - Message with message_id: 81a7faa4-d8e0-4cbc-b9ea-95ff557a8b1c already exists, skipping
+2025-06-06 13:12:56,396 - INFO - Message replicated: 81a7faa4-d8e0-4cbc-b9ea-95ff557a8b1c, Msg4, order=3
+2025-06-06 13:12:56,404 - INFO - Message replicated: d63b03ae-bd5d-44f4-820a-f69212aa2472, Msg3, order=4
+2025-06-06 13:12:56,435 - INFO - Received replication request with message_id: d63b03ae-bd5d-44f4-820a-f69212aa2472, content: Msg3, order: 4
+2025-06-06 13:12:56,436 - INFO - Message with message_id: d63b03ae-bd5d-44f4-820a-f69212aa2472 already exists, skipping
+2025-06-06 13:12:58,380 - INFO - Received replication request with message_id: 71582666-867f-4cea-a167-6a2aa43623c1, content: Msg2, order: 4
+2025-06-06 13:12:58,381 - INFO - Message with message_id: 71582666-867f-4cea-a167-6a2aa43623c1 already exists, skipping
+2025-06-06 13:13:01,445 - INFO - Received GET request for replicated messages
+2025-06-06 13:18:15,560 - INFO - Starting up, syncing with master
+2025-06-06 13:18:15,605 - INFO - HTTP Request: POST http://master:8000/sync "HTTP/1.1 200 OK"
+2025-06-06 13:18:15,607 - INFO - Sync completed, max_display_order=0
+2025-06-06 13:18:15,778 - INFO - Starting up, syncing with master
+2025-06-06 13:18:15,821 - INFO - HTTP Request: POST http://master:8000/sync "HTTP/1.1 200 OK"
+2025-06-06 13:18:15,822 - INFO - Sync completed, max_display_order=0
+2025-06-06 13:19:31,172 - INFO - Messages cleared
+2025-06-06 13:19:31,179 - INFO - Messages cleared
+2025-06-06 13:19:31,297 - INFO - Received replication request with message_id: 883be2df-6ea7-4a34-b534-436b54c9c7cd, content: Test w=1, order: 1
+2025-06-06 13:19:31,297 - INFO - Received replication request with message_id: 883be2df-6ea7-4a34-b534-436b54c9c7cd, content: Test w=1, order: 1
+2025-06-06 13:19:31,797 - INFO - Message replicated: 883be2df-6ea7-4a34-b534-436b54c9c7cd, Test w=1, order=1, max_display_order=1
+2025-06-06 13:19:31,797 - INFO - Message replicated: 883be2df-6ea7-4a34-b534-436b54c9c7cd, Test w=1, order=1, max_display_order=1
+2025-06-06 13:19:34,298 - INFO - Received GET request for replicated messages
+2025-06-06 13:19:34,302 - INFO - Received GET request for replicated messages
+2025-06-06 13:19:34,335 - INFO - Messages cleared
+2025-06-06 13:19:34,343 - INFO - Messages cleared
+2025-06-06 13:19:34,421 - INFO - Received replication request with message_id: 1c481d7d-7053-40d2-b12f-384d44e107cf, content: Test w=2, order: 1
+2025-06-06 13:19:34,923 - INFO - Message replicated: 1c481d7d-7053-40d2-b12f-384d44e107cf, Test w=2, order=1, max_display_order=1
+2025-06-06 13:19:34,969 - INFO - Received replication request with message_id: 1c481d7d-7053-40d2-b12f-384d44e107cf, content: Test w=2, order: 1
+2025-06-06 13:19:35,084 - INFO - Messages cleared
+2025-06-06 13:19:35,090 - INFO - Messages cleared
+2025-06-06 13:19:35,167 - INFO - Received replication request with message_id: f2e9c3f2-28ef-4b14-82fe-6305f76df4dd, content: Test w=3, order: 1
+2025-06-06 13:19:35,469 - INFO - Message replicated: 1c481d7d-7053-40d2-b12f-384d44e107cf, Test w=2, order=1, max_display_order=1
+2025-06-06 13:19:35,470 - WARNING - Generating random 500 error for message_id: 1c481d7d-7053-40d2-b12f-384d44e107cf
+2025-06-06 13:19:35,669 - INFO - Message replicated: f2e9c3f2-28ef-4b14-82fe-6305f76df4dd, Test w=3, order=1, max_display_order=1
+2025-06-06 13:19:35,702 - INFO - Received replication request with message_id: f2e9c3f2-28ef-4b14-82fe-6305f76df4dd, content: Test w=3, order: 1
+2025-06-06 13:19:36,203 - INFO - Message replicated: f2e9c3f2-28ef-4b14-82fe-6305f76df4dd, Test w=3, order=1, max_display_order=1
+2025-06-06 13:19:36,246 - INFO - Messages cleared
+2025-06-06 13:19:36,252 - INFO - Messages cleared
+2025-06-06 13:19:36,330 - INFO - Received replication request with message_id: b81dda5c-019f-438a-9674-4c3f32c2ef98, content: Duplicate test, order: 1
+2025-06-06 13:19:36,507 - INFO - Received replication request with message_id: 1c481d7d-7053-40d2-b12f-384d44e107cf, content: Test w=2, order: 1
+2025-06-06 13:19:36,831 - INFO - Message replicated: b81dda5c-019f-438a-9674-4c3f32c2ef98, Duplicate test, order=1, max_display_order=1
+2025-06-06 13:19:36,831 - WARNING - Generating random 500 error for message_id: b81dda5c-019f-438a-9674-4c3f32c2ef98
+2025-06-06 13:19:37,008 - INFO - Message replicated: 1c481d7d-7053-40d2-b12f-384d44e107cf, Test w=2, order=1, max_display_order=1
+2025-06-06 13:19:37,873 - INFO - Received replication request with message_id: b81dda5c-019f-438a-9674-4c3f32c2ef98, content: Duplicate test, order: 1
+2025-06-06 13:19:37,873 - INFO - Message with message_id: b81dda5c-019f-438a-9674-4c3f32c2ef98 already exists, skipping
+2025-06-06 13:19:37,906 - INFO - Received replication request with message_id: b81dda5c-019f-438a-9674-4c3f32c2ef98, content: Duplicate test, order: 1
+2025-06-06 13:19:38,406 - INFO - Message replicated: b81dda5c-019f-438a-9674-4c3f32c2ef98, Duplicate test, order=1, max_display_order=1
+2025-06-06 13:19:41,423 - INFO - Received GET request for replicated messages
+2025-06-06 13:19:41,429 - INFO - Received GET request for replicated messages
+2025-06-06 13:19:41,468 - INFO - Messages cleared
+2025-06-06 13:19:41,474 - INFO - Messages cleared
+2025-06-06 13:19:41,551 - INFO - Received replication request with message_id: 3264934d-0280-42b0-b5b0-dc27d6a9b68a, content: First, order: 1
+2025-06-06 13:19:42,052 - INFO - Message replicated: 3264934d-0280-42b0-b5b0-dc27d6a9b68a, First, order=1, max_display_order=1
+2025-06-06 13:19:42,085 - INFO - Received replication request with message_id: 3264934d-0280-42b0-b5b0-dc27d6a9b68a, content: First, order: 1
+2025-06-06 13:19:42,586 - INFO - Message replicated: 3264934d-0280-42b0-b5b0-dc27d6a9b68a, First, order=1, max_display_order=1
+2025-06-06 13:19:42,623 - INFO - Received replication request with message_id: d8738fdf-c58c-4e8b-b41a-e52468ecb4e6, content: Second, order: 2
+2025-06-06 13:19:43,124 - INFO - Message replicated: d8738fdf-c58c-4e8b-b41a-e52468ecb4e6, Second, order=2, max_display_order=2
+2025-06-06 13:19:43,158 - INFO - Received replication request with message_id: d8738fdf-c58c-4e8b-b41a-e52468ecb4e6, content: Second, order: 2
+2025-06-06 13:19:43,658 - INFO - Message replicated: d8738fdf-c58c-4e8b-b41a-e52468ecb4e6, Second, order=2, max_display_order=2
+2025-06-06 13:19:43,697 - INFO - Received replication request with message_id: 2f8a7e72-2ca6-40e9-ab0d-0a83f77f9a84, content: Third, order: 3
+2025-06-06 13:19:44,198 - INFO - Message replicated: 2f8a7e72-2ca6-40e9-ab0d-0a83f77f9a84, Third, order=3, max_display_order=3
+2025-06-06 13:19:44,241 - INFO - Received replication request with message_id: 2f8a7e72-2ca6-40e9-ab0d-0a83f77f9a84, content: Third, order: 3
+2025-06-06 13:19:44,742 - INFO - Message replicated: 2f8a7e72-2ca6-40e9-ab0d-0a83f77f9a84, Third, order=3, max_display_order=3
+2025-06-06 13:19:47,756 - INFO - Received GET request for replicated messages
+2025-06-06 13:19:47,763 - INFO - Received GET request for replicated messages
+2025-06-06 13:19:47,793 - INFO - Messages cleared
+2025-06-06 13:19:47,799 - INFO - Messages cleared
+2025-06-06 13:19:48,962 - INFO - Received replication request with message_id: 31858c39-c108-4708-bbca-732a7ed898a5, content: Msg1, order: 1
+2025-06-06 13:19:48,963 - INFO - Received replication request with message_id: f7fe0ec0-e718-4561-8369-723d96a47788, content: Msg2, order: 2
+2025-06-06 13:19:49,463 - INFO - Message replicated: 31858c39-c108-4708-bbca-732a7ed898a5, Msg1, order=1, max_display_order=1
+2025-06-06 13:19:49,464 - INFO - Message replicated: f7fe0ec0-e718-4561-8369-723d96a47788, Msg2, order=2, max_display_order=2
+2025-06-06 13:19:50,937 - INFO - Starting up, syncing with master
+2025-06-06 13:19:50,989 - INFO - HTTP Request: POST http://master:8000/sync "HTTP/1.1 200 OK"
+2025-06-06 13:19:50,990 - INFO - Synced message: 31858c39-c108-4708-bbca-732a7ed898a5, Msg1, order=1
+2025-06-06 13:19:50,991 - INFO - Synced message: f7fe0ec0-e718-4561-8369-723d96a47788, Msg2, order=2
+2025-06-06 13:19:50,991 - INFO - Synced message: 619a69d9-bdd7-4614-b427-ed8e822203a3, Msg4, order=3
+2025-06-06 13:19:50,992 - INFO - Synced message: 5bbec469-042a-4eae-b111-88ad5e3d691c, Msg3, order=4
+2025-06-06 13:19:50,992 - INFO - Sync completed, max_display_order=4
+2025-06-06 13:19:52,797 - INFO - Received replication request with message_id: 619a69d9-bdd7-4614-b427-ed8e822203a3, content: Msg4, order: 3
+2025-06-06 13:19:52,798 - INFO - Received replication request with message_id: 619a69d9-bdd7-4614-b427-ed8e822203a3, content: Msg4, order: 3
+2025-06-06 13:19:52,798 - INFO - Message with message_id: 619a69d9-bdd7-4614-b427-ed8e822203a3 already exists, skipping
+2025-06-06 13:19:52,798 - INFO - Received replication request with message_id: 5bbec469-042a-4eae-b111-88ad5e3d691c, content: Msg3, order: 4
+2025-06-06 13:19:53,297 - INFO - Message replicated: 619a69d9-bdd7-4614-b427-ed8e822203a3, Msg4, order=3, max_display_order=3
+2025-06-06 13:19:53,298 - WARNING - Generating random 500 error for message_id: 619a69d9-bdd7-4614-b427-ed8e822203a3
+2025-06-06 13:19:53,299 - INFO - Message replicated: 5bbec469-042a-4eae-b111-88ad5e3d691c, Msg3, order=4, max_display_order=4
+2025-06-06 13:19:53,299 - WARNING - Generating random 500 error for message_id: 5bbec469-042a-4eae-b111-88ad5e3d691c
+2025-06-06 13:19:53,825 - INFO - Received replication request with message_id: 31858c39-c108-4708-bbca-732a7ed898a5, content: Msg1, order: 4
+2025-06-06 13:19:53,826 - INFO - Message with message_id: 31858c39-c108-4708-bbca-732a7ed898a5 already exists, skipping
+2025-06-06 13:19:54,388 - INFO - Received replication request with message_id: 5bbec469-042a-4eae-b111-88ad5e3d691c, content: Msg3, order: 4
+2025-06-06 13:19:54,388 - INFO - Message with message_id: 5bbec469-042a-4eae-b111-88ad5e3d691c already exists, skipping
+2025-06-06 13:19:54,388 - INFO - Received replication request with message_id: f7fe0ec0-e718-4561-8369-723d96a47788, content: Msg2, order: 4
+2025-06-06 13:19:54,389 - INFO - Message with message_id: f7fe0ec0-e718-4561-8369-723d96a47788 already exists, skipping
+2025-06-06 13:19:54,389 - INFO - Received replication request with message_id: 619a69d9-bdd7-4614-b427-ed8e822203a3, content: Msg4, order: 4
+2025-06-06 13:19:54,390 - INFO - Message with message_id: 619a69d9-bdd7-4614-b427-ed8e822203a3 already exists, skipping
+2025-06-06 13:19:54,424 - INFO - Received replication request with message_id: 5bbec469-042a-4eae-b111-88ad5e3d691c, content: Msg3, order: 4
+2025-06-06 13:19:54,425 - INFO - Message with message_id: 5bbec469-042a-4eae-b111-88ad5e3d691c already exists, skipping
+2025-06-06 13:20:04,444 - INFO - Received GET request for replicated messages
+2025-06-06 13:23:17,939 - INFO - Starting up, syncing with master
+2025-06-06 13:23:17,980 - ERROR - Error syncing with master: All connection attempts failed
+2025-06-06 13:23:18,218 - INFO - Starting up, syncing with master
+2025-06-06 13:23:18,258 - INFO - HTTP Request: POST http://master:8000/sync "HTTP/1.1 200 OK"
+2025-06-06 13:23:18,259 - INFO - Sync completed, max_display_order=0
+2025-06-06 13:23:27,047 - INFO - Messages cleared
+2025-06-06 13:23:27,054 - INFO - Messages cleared
+2025-06-06 13:23:27,202 - INFO - Received replication request with message_id: 0cc5618d-fcc8-4035-ad76-344e2925fbf4, content: Test w=1, order: 1
+2025-06-06 13:23:27,202 - INFO - Received replication request with message_id: 0cc5618d-fcc8-4035-ad76-344e2925fbf4, content: Test w=1, order: 1
+2025-06-06 13:23:29,202 - INFO - Message replicated: 0cc5618d-fcc8-4035-ad76-344e2925fbf4, Test w=1, order=1
+2025-06-06 13:23:29,202 - INFO - Message replicated: 0cc5618d-fcc8-4035-ad76-344e2925fbf4, Test w=1, order=1
+2025-06-06 13:23:30,215 - INFO - Received GET request for replicated messages
+2025-06-06 13:23:30,220 - INFO - Received GET request for replicated messages
+2025-06-06 13:23:30,256 - INFO - Messages cleared
+2025-06-06 13:23:30,264 - INFO - Messages cleared
+2025-06-06 13:23:30,356 - INFO - Received replication request with message_id: e3f1f534-2678-438b-bcec-d0eb3b675e5e, content: Test w=2, order: 1
+2025-06-06 13:23:32,356 - INFO - Message replicated: e3f1f534-2678-438b-bcec-d0eb3b675e5e, Test w=2, order=1
+2025-06-06 13:23:32,357 - WARNING - Generating random 500 error for message_id: e3f1f534-2678-438b-bcec-d0eb3b675e5e
+2025-06-06 13:23:33,389 - INFO - Received replication request with message_id: e3f1f534-2678-438b-bcec-d0eb3b675e5e, content: Test w=2, order: 1
+2025-06-06 13:23:33,389 - INFO - Message with message_id: e3f1f534-2678-438b-bcec-d0eb3b675e5e already exists, skipping
+2025-06-06 13:23:33,433 - INFO - Received replication request with message_id: e3f1f534-2678-438b-bcec-d0eb3b675e5e, content: Test w=2, order: 1
+2025-06-06 13:23:33,555 - INFO - Messages cleared
+2025-06-06 13:23:33,561 - INFO - Messages cleared
+2025-06-06 13:23:33,655 - INFO - Received replication request with message_id: bfdeae40-c37d-48db-8137-6bc6059f4c08, content: Test w=3, order: 1
+2025-06-06 13:23:35,434 - INFO - Message replicated: e3f1f534-2678-438b-bcec-d0eb3b675e5e, Test w=2, order=1
+2025-06-06 13:23:35,655 - INFO - Message replicated: bfdeae40-c37d-48db-8137-6bc6059f4c08, Test w=3, order=1
+2025-06-06 13:23:35,702 - INFO - Received replication request with message_id: bfdeae40-c37d-48db-8137-6bc6059f4c08, content: Test w=3, order: 1
+2025-06-06 13:23:37,703 - INFO - Message replicated: bfdeae40-c37d-48db-8137-6bc6059f4c08, Test w=3, order=1
+2025-06-06 13:23:37,714 - INFO - Received GET request for replicated messages
+2025-06-06 13:23:37,718 - INFO - Received GET request for replicated messages
+2025-06-06 13:23:37,782 - INFO - Messages cleared
+2025-06-06 13:23:37,788 - INFO - Messages cleared
+2025-06-06 13:23:37,870 - INFO - Received replication request with message_id: c3de9d96-7718-41c1-ae96-c6602ce3eb9a, content: Duplicate test, order: 1
+2025-06-06 13:23:39,871 - INFO - Message replicated: c3de9d96-7718-41c1-ae96-c6602ce3eb9a, Duplicate test, order=1
+2025-06-06 13:23:39,917 - INFO - Received replication request with message_id: c3de9d96-7718-41c1-ae96-c6602ce3eb9a, content: Duplicate test, order: 1
+2025-06-06 13:23:41,917 - INFO - Message replicated: c3de9d96-7718-41c1-ae96-c6602ce3eb9a, Duplicate test, order=1
+2025-06-06 13:23:44,942 - INFO - Received GET request for replicated messages
+2025-06-06 13:23:44,953 - INFO - Received GET request for replicated messages
+2025-06-06 13:23:44,994 - INFO - Messages cleared
+2025-06-06 13:23:45,002 - INFO - Messages cleared
+2025-06-06 13:23:45,104 - INFO - Received replication request with message_id: 7e87d077-7d67-44d9-a967-8032bcb4d339, content: First, order: 1
+2025-06-06 13:23:47,105 - INFO - Message replicated: 7e87d077-7d67-44d9-a967-8032bcb4d339, First, order=1
+2025-06-06 13:23:47,137 - INFO - Received replication request with message_id: 7e87d077-7d67-44d9-a967-8032bcb4d339, content: First, order: 1
+2025-06-06 13:23:49,139 - INFO - Message replicated: 7e87d077-7d67-44d9-a967-8032bcb4d339, First, order=1
+2025-06-06 13:23:49,175 - INFO - Received replication request with message_id: b894eff2-4510-484c-a003-9076a40ef20b, content: Second, order: 2
+2025-06-06 13:23:51,175 - INFO - Message replicated: b894eff2-4510-484c-a003-9076a40ef20b, Second, order=2
+2025-06-06 13:23:51,209 - INFO - Received replication request with message_id: b894eff2-4510-484c-a003-9076a40ef20b, content: Second, order: 2
+2025-06-06 13:23:53,210 - INFO - Message replicated: b894eff2-4510-484c-a003-9076a40ef20b, Second, order=2
+2025-06-06 13:23:53,211 - WARNING - Generating random 500 error for message_id: b894eff2-4510-484c-a003-9076a40ef20b
+2025-06-06 13:23:54,242 - INFO - Received replication request with message_id: b894eff2-4510-484c-a003-9076a40ef20b, content: Second, order: 2
+2025-06-06 13:23:54,243 - INFO - Message with message_id: b894eff2-4510-484c-a003-9076a40ef20b already exists, skipping
+2025-06-06 13:23:54,335 - INFO - Messages cleared
+2025-06-06 13:23:54,341 - INFO - Messages cleared
+2025-06-06 13:23:55,586 - INFO - Received replication request with message_id: 08460e30-e422-464f-993a-b421c25aa1a6, content: Msg1, order: 1
+2025-06-06 13:23:55,587 - INFO - Received replication request with message_id: 9a50496e-d6d1-41f6-96d4-65545e06b147, content: Msg2, order: 2
+2025-06-06 13:23:57,587 - INFO - Message replicated: 08460e30-e422-464f-993a-b421c25aa1a6, Msg1, order=1
+2025-06-06 13:23:57,587 - WARNING - Generating random 500 error for message_id: 08460e30-e422-464f-993a-b421c25aa1a6
+2025-06-06 13:23:57,588 - INFO - Message replicated: 9a50496e-d6d1-41f6-96d4-65545e06b147, Msg2, order=2
+2025-06-06 13:23:59,053 - INFO - Starting up, syncing with master
+2025-06-06 13:23:59,094 - INFO - HTTP Request: POST http://master:8000/sync "HTTP/1.1 200 OK"
+2025-06-06 13:23:59,095 - INFO - Synced message: 08460e30-e422-464f-993a-b421c25aa1a6, Msg1, order=1
+2025-06-06 13:23:59,095 - INFO - Synced message: 9a50496e-d6d1-41f6-96d4-65545e06b147, Msg2, order=2
+2025-06-06 13:23:59,096 - INFO - Synced message: 506e3257-80e8-422c-ade5-8b383175432b, Msg4, order=3
+2025-06-06 13:23:59,096 - INFO - Synced message: 7d36b29b-cbad-416e-a191-b17852f5d18b, Msg3, order=4
+2025-06-06 13:23:59,096 - INFO - Sync completed, max_display_order=4
+2025-06-06 13:23:59,391 - INFO - Received replication request with message_id: 506e3257-80e8-422c-ade5-8b383175432b, content: Msg4, order: 3
+2025-06-06 13:23:59,392 - INFO - Received replication request with message_id: 506e3257-80e8-422c-ade5-8b383175432b, content: Msg4, order: 3
+2025-06-06 13:23:59,392 - INFO - Message with message_id: 506e3257-80e8-422c-ade5-8b383175432b already exists, skipping
+2025-06-06 13:23:59,392 - INFO - Received replication request with message_id: 7d36b29b-cbad-416e-a191-b17852f5d18b, content: Msg3, order: 4
+2025-06-06 13:23:59,393 - INFO - Received replication request with message_id: 08460e30-e422-464f-993a-b421c25aa1a6, content: Msg1, order: 4
+2025-06-06 13:23:59,393 - INFO - Message with message_id: 08460e30-e422-464f-993a-b421c25aa1a6 already exists, skipping
+2025-06-06 13:24:00,418 - INFO - Received replication request with message_id: 08460e30-e422-464f-993a-b421c25aa1a6, content: Msg1, order: 4
+2025-06-06 13:24:00,418 - INFO - Message with message_id: 08460e30-e422-464f-993a-b421c25aa1a6 already exists, skipping
+2025-06-06 13:24:01,391 - INFO - Message replicated: 506e3257-80e8-422c-ade5-8b383175432b, Msg4, order=3
+2025-06-06 13:24:01,393 - INFO - Message replicated: 7d36b29b-cbad-416e-a191-b17852f5d18b, Msg3, order=4
+2025-06-06 13:24:01,426 - INFO - Received replication request with message_id: 7d36b29b-cbad-416e-a191-b17852f5d18b, content: Msg3, order: 4
+2025-06-06 13:24:01,426 - INFO - Message with message_id: 7d36b29b-cbad-416e-a191-b17852f5d18b already exists, skipping
+2025-06-06 13:24:02,508 - INFO - Received replication request with message_id: 9a50496e-d6d1-41f6-96d4-65545e06b147, content: Msg2, order: 4
+2025-06-06 13:24:02,508 - INFO - Message with message_id: 9a50496e-d6d1-41f6-96d4-65545e06b147 already exists, skipping
+2025-06-06 13:24:06,434 - INFO - Received GET request for replicated messages
+2025-06-06 13:29:36,127 - INFO - Starting up, syncing with master
+2025-06-06 13:29:36,196 - INFO - HTTP Request: POST http://master:8000/sync "HTTP/1.1 200 OK"
+2025-06-06 13:29:36,198 - INFO - Sync completed, max_display_order=0
+2025-06-06 13:29:36,368 - INFO - Starting up, syncing with master
+2025-06-06 13:29:36,423 - INFO - HTTP Request: POST http://master:8000/sync "HTTP/1.1 200 OK"
+2025-06-06 13:29:36,425 - INFO - Sync completed, max_display_order=0
+2025-06-06 13:30:06,576 - INFO - Starting up, syncing with master
+2025-06-06 13:30:06,620 - INFO - HTTP Request: POST http://master:8000/sync "HTTP/1.1 200 OK"
+2025-06-06 13:30:06,621 - INFO - Sync completed, max_display_order=0
+2025-06-06 13:30:06,732 - INFO - Starting up, syncing with master
+2025-06-06 13:30:06,773 - INFO - HTTP Request: POST http://master:8000/sync "HTTP/1.1 200 OK"
+2025-06-06 13:30:06,775 - INFO - Sync completed, max_display_order=0
+2025-06-06 13:30:11,126 - INFO - Messages cleared
+2025-06-06 13:30:11,134 - INFO - Messages cleared
+2025-06-06 13:30:11,277 - INFO - Received replication request with message_id: ec151708-af34-45e0-81b4-43b165d62f81, content: Test w=1, order: 1
+2025-06-06 13:30:11,277 - INFO - Received replication request with message_id: ec151708-af34-45e0-81b4-43b165d62f81, content: Test w=1, order: 1
+2025-06-06 13:30:13,277 - INFO - Message replicated: ec151708-af34-45e0-81b4-43b165d62f81, Test w=1, order=1
+2025-06-06 13:30:13,278 - INFO - Message replicated: ec151708-af34-45e0-81b4-43b165d62f81, Test w=1, order=1
+2025-06-06 13:30:14,286 - INFO - Received GET request for replicated messages
+2025-06-06 13:30:14,289 - INFO - Received GET request for replicated messages
+2025-06-06 13:30:14,319 - INFO - Messages cleared
+2025-06-06 13:30:14,327 - INFO - Messages cleared
+2025-06-06 13:30:14,409 - INFO - Received replication request with message_id: 1ee339da-b753-4d4a-8980-56841e9980b9, content: Test w=2, order: 1
+2025-06-06 13:30:16,410 - INFO - Message replicated: 1ee339da-b753-4d4a-8980-56841e9980b9, Test w=2, order=1
+2025-06-06 13:30:16,410 - WARNING - Generating random 500 error for message_id: 1ee339da-b753-4d4a-8980-56841e9980b9
+2025-06-06 13:30:17,443 - INFO - Received replication request with message_id: 1ee339da-b753-4d4a-8980-56841e9980b9, content: Test w=2, order: 1
+2025-06-06 13:30:17,444 - INFO - Message with message_id: 1ee339da-b753-4d4a-8980-56841e9980b9 already exists, skipping
+2025-06-06 13:30:17,480 - INFO - Received replication request with message_id: 1ee339da-b753-4d4a-8980-56841e9980b9, content: Test w=2, order: 1
+2025-06-06 13:30:17,481 - INFO - Received GET request for replicated messages
+2025-06-06 13:30:19,480 - INFO - Message replicated: 1ee339da-b753-4d4a-8980-56841e9980b9, Test w=2, order=1
+2025-06-06 13:30:20,504 - INFO - Received GET request for replicated messages
+2025-06-06 13:30:20,534 - INFO - Messages cleared
+2025-06-06 13:30:20,540 - INFO - Messages cleared
+2025-06-06 13:30:20,619 - INFO - Received replication request with message_id: f5a911d9-28a5-417a-aae4-4570ac7b7828, content: Test w=3, order: 1
+2025-06-06 13:30:22,620 - INFO - Message replicated: f5a911d9-28a5-417a-aae4-4570ac7b7828, Test w=3, order=1
+2025-06-06 13:30:22,654 - INFO - Received replication request with message_id: f5a911d9-28a5-417a-aae4-4570ac7b7828, content: Test w=3, order: 1
+2025-06-06 13:30:24,654 - INFO - Message replicated: f5a911d9-28a5-417a-aae4-4570ac7b7828, Test w=3, order=1
+2025-06-06 13:30:27,688 - INFO - Received GET request for replicated messages
+2025-06-06 13:30:27,695 - INFO - Received GET request for replicated messages
+2025-06-06 13:30:27,740 - INFO - Messages cleared
+2025-06-06 13:30:27,748 - INFO - Messages cleared
+2025-06-06 13:30:27,842 - INFO - Received replication request with message_id: 20024c61-c3d9-49a5-a103-56ab85ec759e, content: Duplicate test, order: 1
+2025-06-06 13:30:29,843 - INFO - Message replicated: 20024c61-c3d9-49a5-a103-56ab85ec759e, Duplicate test, order=1
+2025-06-06 13:30:29,844 - WARNING - Generating random 500 error for message_id: 20024c61-c3d9-49a5-a103-56ab85ec759e
+2025-06-06 13:30:30,881 - INFO - Received replication request with message_id: 20024c61-c3d9-49a5-a103-56ab85ec759e, content: Duplicate test, order: 1
+2025-06-06 13:30:30,881 - INFO - Message with message_id: 20024c61-c3d9-49a5-a103-56ab85ec759e already exists, skipping
+2025-06-06 13:30:30,930 - INFO - Received replication request with message_id: 20024c61-c3d9-49a5-a103-56ab85ec759e, content: Duplicate test, order: 1
+2025-06-06 13:30:32,929 - INFO - Message replicated: 20024c61-c3d9-49a5-a103-56ab85ec759e, Duplicate test, order=1
+2025-06-06 13:30:32,930 - WARNING - Generating random 500 error for message_id: 20024c61-c3d9-49a5-a103-56ab85ec759e
+2025-06-06 13:30:33,964 - INFO - Received replication request with message_id: 20024c61-c3d9-49a5-a103-56ab85ec759e, content: Duplicate test, order: 1
+2025-06-06 13:30:33,965 - INFO - Message with message_id: 20024c61-c3d9-49a5-a103-56ab85ec759e already exists, skipping
+2025-06-06 13:30:36,994 - INFO - Received GET request for replicated messages
+2025-06-06 13:30:37,000 - INFO - Received GET request for replicated messages
+2025-06-06 13:30:37,031 - INFO - Messages cleared
+2025-06-06 13:30:37,037 - INFO - Messages cleared
+2025-06-06 13:30:37,116 - INFO - Received replication request with message_id: 057a1f8f-8310-464f-9952-f586d213bd5a, content: First, order: 1
+2025-06-06 13:30:39,117 - INFO - Message replicated: 057a1f8f-8310-464f-9952-f586d213bd5a, First, order=1
+2025-06-06 13:30:39,152 - INFO - Received replication request with message_id: 057a1f8f-8310-464f-9952-f586d213bd5a, content: First, order: 1
+2025-06-06 13:30:41,153 - INFO - Message replicated: 057a1f8f-8310-464f-9952-f586d213bd5a, First, order=1
+2025-06-06 13:30:41,189 - INFO - Received replication request with message_id: c87ad9a5-b26c-4e7f-8299-cb6207cc5289, content: Second, order: 2
+2025-06-06 13:30:43,190 - INFO - Message replicated: c87ad9a5-b26c-4e7f-8299-cb6207cc5289, Second, order=2
+2025-06-06 13:30:43,223 - INFO - Received replication request with message_id: c87ad9a5-b26c-4e7f-8299-cb6207cc5289, content: Second, order: 2
+2025-06-06 13:30:45,224 - INFO - Message replicated: c87ad9a5-b26c-4e7f-8299-cb6207cc5289, Second, order=2
+2025-06-06 13:30:45,262 - INFO - Received replication request with message_id: 2afee362-7a6f-4869-ab3f-0266394ac300, content: Third, order: 3
+2025-06-06 13:30:47,263 - INFO - Message replicated: 2afee362-7a6f-4869-ab3f-0266394ac300, Third, order=3
+2025-06-06 13:30:47,306 - INFO - Received replication request with message_id: 2afee362-7a6f-4869-ab3f-0266394ac300, content: Third, order: 3
+2025-06-06 13:30:49,307 - INFO - Message replicated: 2afee362-7a6f-4869-ab3f-0266394ac300, Third, order=3
+2025-06-06 13:30:52,331 - INFO - Received GET request for replicated messages
+2025-06-06 13:30:52,349 - INFO - Received GET request for replicated messages
+2025-06-06 13:30:52,380 - INFO - Messages cleared
+2025-06-06 13:30:52,386 - INFO - Messages cleared
+2025-06-06 13:30:53,509 - INFO - Received replication request with message_id: 012d2d52-cd9d-46fa-97de-78336459fb86, content: Msg1, order: 1
+2025-06-06 13:30:53,510 - INFO - Received replication request with message_id: c60effed-e33a-4a3e-84fa-3e8743ddc1cf, content: Msg2, order: 2
+2025-06-06 13:30:55,510 - INFO - Message replicated: 012d2d52-cd9d-46fa-97de-78336459fb86, Msg1, order=1
+2025-06-06 13:30:55,511 - INFO - Message replicated: c60effed-e33a-4a3e-84fa-3e8743ddc1cf, Msg2, order=2
+2025-06-06 13:30:55,511 - WARNING - Generating random 500 error for message_id: c60effed-e33a-4a3e-84fa-3e8743ddc1cf
+2025-06-06 13:30:56,544 - INFO - Received replication request with message_id: c60effed-e33a-4a3e-84fa-3e8743ddc1cf, content: Msg2, order: 2
+2025-06-06 13:30:56,545 - INFO - Message with message_id: c60effed-e33a-4a3e-84fa-3e8743ddc1cf already exists, skipping
+2025-06-06 13:30:57,336 - INFO - Received replication request with message_id: beeb2b01-f5d6-4d76-83c1-ab640bbf370c, content: Msg4, order: 3
+2025-06-06 13:30:57,336 - INFO - Received replication request with message_id: 4a071119-2543-487d-ac9a-fff51c7cc753, content: Msg3, order: 4
+2025-06-06 13:30:57,991 - INFO - Starting up, syncing with master
+2025-06-06 13:30:58,033 - INFO - HTTP Request: POST http://master:8000/sync "HTTP/1.1 200 OK"
+2025-06-06 13:30:58,034 - INFO - Synced message: 012d2d52-cd9d-46fa-97de-78336459fb86, Msg1, order=1
+2025-06-06 13:30:58,034 - INFO - Synced message: c60effed-e33a-4a3e-84fa-3e8743ddc1cf, Msg2, order=2
+2025-06-06 13:30:58,035 - INFO - Synced message: beeb2b01-f5d6-4d76-83c1-ab640bbf370c, Msg4, order=3
+2025-06-06 13:30:58,035 - INFO - Synced message: 4a071119-2543-487d-ac9a-fff51c7cc753, Msg3, order=4
+2025-06-06 13:30:58,035 - INFO - Sync completed, max_display_order=4
+2025-06-06 13:30:58,389 - INFO - Received replication request with message_id: 012d2d52-cd9d-46fa-97de-78336459fb86, content: Msg1, order: 4
+2025-06-06 13:30:58,390 - INFO - Message with message_id: 012d2d52-cd9d-46fa-97de-78336459fb86 already exists, skipping
+2025-06-06 13:30:58,391 - INFO - Received replication request with message_id: beeb2b01-f5d6-4d76-83c1-ab640bbf370c, content: Msg4, order: 4
+2025-06-06 13:30:58,392 - INFO - Message with message_id: beeb2b01-f5d6-4d76-83c1-ab640bbf370c already exists, skipping
+2025-06-06 13:30:59,336 - INFO - Message replicated: beeb2b01-f5d6-4d76-83c1-ab640bbf370c, Msg4, order=3
+2025-06-06 13:30:59,337 - INFO - Message replicated: 4a071119-2543-487d-ac9a-fff51c7cc753, Msg3, order=4
+2025-06-06 13:30:59,372 - INFO - Received replication request with message_id: 4a071119-2543-487d-ac9a-fff51c7cc753, content: Msg3, order: 4
+2025-06-06 13:30:59,372 - INFO - Message with message_id: 4a071119-2543-487d-ac9a-fff51c7cc753 already exists, skipping
+2025-06-06 13:31:01,338 - INFO - Received replication request with message_id: c60effed-e33a-4a3e-84fa-3e8743ddc1cf, content: Msg2, order: 4
+2025-06-06 13:31:01,338 - INFO - Message with message_id: c60effed-e33a-4a3e-84fa-3e8743ddc1cf already exists, skipping
+2025-06-06 13:31:09,388 - INFO - Received GET request for replicated messages
+2025-06-06 13:35:41,716 - INFO - Starting up, syncing with master
+2025-06-06 13:35:41,764 - INFO - HTTP Request: POST http://master:8000/sync "HTTP/1.1 200 OK"
+2025-06-06 13:35:41,766 - INFO - Sync completed, max_display_order=0
+2025-06-06 13:35:41,812 - INFO - Starting up, syncing with master
+2025-06-06 13:35:41,866 - INFO - HTTP Request: POST http://master:8000/sync "HTTP/1.1 200 OK"
+2025-06-06 13:35:41,868 - INFO - Sync completed, max_display_order=0
+2025-06-06 13:37:22,410 - INFO - Messages cleared
+2025-06-06 13:37:22,419 - INFO - Messages cleared
+2025-06-06 13:37:22,550 - INFO - Received replication request with message_id: cc0490b3-1174-488d-9303-223557bd7347, content: Test w=1, order: 1
+2025-06-06 13:37:22,550 - INFO - Received replication request with message_id: cc0490b3-1174-488d-9303-223557bd7347, content: Test w=1, order: 1
+2025-06-06 13:37:24,551 - INFO - Message replicated: cc0490b3-1174-488d-9303-223557bd7347, Test w=1, order=1
+2025-06-06 13:37:24,551 - INFO - Message replicated: cc0490b3-1174-488d-9303-223557bd7347, Test w=1, order=1
+2025-06-06 13:37:25,563 - INFO - Received GET request for replicated messages
+2025-06-06 13:37:25,563 - INFO - All replicated messages: [('cc0490b3-1174-488d-9303-223557bd7347', 'Test w=1', 1)]
+2025-06-06 13:37:25,564 - INFO - Displayed messages: [('cc0490b3-1174-488d-9303-223557bd7347', 'Test w=1', 1)]
+2025-06-06 13:37:25,567 - INFO - Received GET request for replicated messages
+2025-06-06 13:37:25,568 - INFO - All replicated messages: [('cc0490b3-1174-488d-9303-223557bd7347', 'Test w=1', 1)]
+2025-06-06 13:37:25,568 - INFO - Displayed messages: [('cc0490b3-1174-488d-9303-223557bd7347', 'Test w=1', 1)]
+2025-06-06 13:37:25,599 - INFO - Messages cleared
+2025-06-06 13:37:25,607 - INFO - Messages cleared
+2025-06-06 13:37:25,698 - INFO - Received replication request with message_id: d4ff874f-6c16-4128-839a-c8927b698e63, content: Test w=2, order: 1
+2025-06-06 13:37:27,699 - INFO - Message replicated: d4ff874f-6c16-4128-839a-c8927b698e63, Test w=2, order=1
+2025-06-06 13:37:27,733 - INFO - Received replication request with message_id: d4ff874f-6c16-4128-839a-c8927b698e63, content: Test w=2, order: 1
+2025-06-06 13:37:27,735 - INFO - Received GET request for replicated messages
+2025-06-06 13:37:27,735 - INFO - All replicated messages: [('d4ff874f-6c16-4128-839a-c8927b698e63', 'Test w=2', 1)]
+2025-06-06 13:37:27,736 - INFO - Displayed messages: [('d4ff874f-6c16-4128-839a-c8927b698e63', 'Test w=2', 1)]
+2025-06-06 13:37:29,734 - INFO - Message replicated: d4ff874f-6c16-4128-839a-c8927b698e63, Test w=2, order=1
+2025-06-06 13:37:30,754 - INFO - Received GET request for replicated messages
+2025-06-06 13:37:30,755 - INFO - All replicated messages: [('d4ff874f-6c16-4128-839a-c8927b698e63', 'Test w=2', 1)]
+2025-06-06 13:37:30,755 - INFO - Displayed messages: [('d4ff874f-6c16-4128-839a-c8927b698e63', 'Test w=2', 1)]
+2025-06-06 13:37:30,787 - INFO - Messages cleared
+2025-06-06 13:37:30,793 - INFO - Messages cleared
+2025-06-06 13:37:30,873 - INFO - Received replication request with message_id: d1ad0660-424c-4ea9-8e67-1ccc5e7865ff, content: Test w=3, order: 1
+2025-06-06 13:37:32,873 - INFO - Message replicated: d1ad0660-424c-4ea9-8e67-1ccc5e7865ff, Test w=3, order=1
+2025-06-06 13:37:32,918 - INFO - Received replication request with message_id: d1ad0660-424c-4ea9-8e67-1ccc5e7865ff, content: Test w=3, order: 1
+2025-06-06 13:37:34,918 - INFO - Message replicated: d1ad0660-424c-4ea9-8e67-1ccc5e7865ff, Test w=3, order=1
+2025-06-06 13:37:37,944 - INFO - Received GET request for replicated messages
+2025-06-06 13:37:37,944 - INFO - All replicated messages: [('d1ad0660-424c-4ea9-8e67-1ccc5e7865ff', 'Test w=3', 1)]
+2025-06-06 13:37:37,944 - INFO - Displayed messages: [('d1ad0660-424c-4ea9-8e67-1ccc5e7865ff', 'Test w=3', 1)]
+2025-06-06 13:37:37,951 - INFO - Received GET request for replicated messages
+2025-06-06 13:37:37,951 - INFO - All replicated messages: [('d1ad0660-424c-4ea9-8e67-1ccc5e7865ff', 'Test w=3', 1)]
+2025-06-06 13:37:37,952 - INFO - Displayed messages: [('d1ad0660-424c-4ea9-8e67-1ccc5e7865ff', 'Test w=3', 1)]
+2025-06-06 13:37:37,984 - INFO - Messages cleared
+2025-06-06 13:37:37,990 - INFO - Messages cleared
+2025-06-06 13:37:38,071 - INFO - Received replication request with message_id: 05146c25-0a92-4557-acb0-a27c2fd2b992, content: Duplicate test, order: 1
+2025-06-06 13:37:40,071 - INFO - Message replicated: 05146c25-0a92-4557-acb0-a27c2fd2b992, Duplicate test, order=1
+2025-06-06 13:37:40,106 - INFO - Received replication request with message_id: 05146c25-0a92-4557-acb0-a27c2fd2b992, content: Duplicate test, order: 1
+2025-06-06 13:37:42,106 - INFO - Message replicated: 05146c25-0a92-4557-acb0-a27c2fd2b992, Duplicate test, order=1
+2025-06-06 13:37:45,133 - INFO - Received GET request for replicated messages
+2025-06-06 13:37:45,134 - INFO - All replicated messages: [('05146c25-0a92-4557-acb0-a27c2fd2b992', 'Duplicate test', 1)]
+2025-06-06 13:37:45,134 - INFO - Displayed messages: [('05146c25-0a92-4557-acb0-a27c2fd2b992', 'Duplicate test', 1)]
+2025-06-06 13:37:45,141 - INFO - Received GET request for replicated messages
+2025-06-06 13:37:45,141 - INFO - All replicated messages: [('05146c25-0a92-4557-acb0-a27c2fd2b992', 'Duplicate test', 1)]
+2025-06-06 13:37:45,141 - INFO - Displayed messages: [('05146c25-0a92-4557-acb0-a27c2fd2b992', 'Duplicate test', 1)]
+2025-06-06 13:37:45,173 - INFO - Messages cleared
+2025-06-06 13:37:45,178 - INFO - Messages cleared
+2025-06-06 13:37:45,270 - INFO - Received replication request with message_id: 375dad25-4290-41f5-be96-7400c6fd96f3, content: First, order: 1
+2025-06-06 13:37:47,270 - INFO - Message replicated: 375dad25-4290-41f5-be96-7400c6fd96f3, First, order=1
+2025-06-06 13:37:47,304 - INFO - Received replication request with message_id: 375dad25-4290-41f5-be96-7400c6fd96f3, content: First, order: 1
+2025-06-06 13:37:49,305 - INFO - Message replicated: 375dad25-4290-41f5-be96-7400c6fd96f3, First, order=1
+2025-06-06 13:37:49,341 - INFO - Received replication request with message_id: f80d1375-10af-4b5d-94db-149fe2c3ef7e, content: Second, order: 2
+2025-06-06 13:37:51,343 - INFO - Message replicated: f80d1375-10af-4b5d-94db-149fe2c3ef7e, Second, order=2
+2025-06-06 13:37:51,378 - INFO - Received replication request with message_id: f80d1375-10af-4b5d-94db-149fe2c3ef7e, content: Second, order: 2
+2025-06-06 13:37:53,378 - INFO - Message replicated: f80d1375-10af-4b5d-94db-149fe2c3ef7e, Second, order=2
+2025-06-06 13:37:53,419 - INFO - Received replication request with message_id: de811701-5b49-441e-9795-5f626c05e224, content: Third, order: 3
+2025-06-06 13:37:55,420 - INFO - Message replicated: de811701-5b49-441e-9795-5f626c05e224, Third, order=3
+2025-06-06 13:37:55,453 - INFO - Received replication request with message_id: de811701-5b49-441e-9795-5f626c05e224, content: Third, order: 3
+2025-06-06 13:37:57,454 - INFO - Message replicated: de811701-5b49-441e-9795-5f626c05e224, Third, order=3
+2025-06-06 13:38:00,482 - INFO - Received GET request for replicated messages
+2025-06-06 13:38:00,483 - INFO - All replicated messages: [('375dad25-4290-41f5-be96-7400c6fd96f3', 'First', 1), ('f80d1375-10af-4b5d-94db-149fe2c3ef7e', 'Second', 2), ('de811701-5b49-441e-9795-5f626c05e224', 'Third', 3)]
+2025-06-06 13:38:00,484 - WARNING - Skipping message with order 2, max_contiguous_order=1
+2025-06-06 13:38:00,484 - WARNING - Skipping message with order 3, max_contiguous_order=1
+2025-06-06 13:38:00,484 - INFO - Displayed messages: [('375dad25-4290-41f5-be96-7400c6fd96f3', 'First', 1)]
+2025-06-06 13:38:00,636 - INFO - Messages cleared
+2025-06-06 13:38:00,644 - INFO - Messages cleared
+2025-06-06 13:38:01,839 - INFO - Received replication request with message_id: 6c00cc0b-06ba-490b-8ea9-19fead3e2180, content: Msg1, order: 1
+2025-06-06 13:38:01,840 - INFO - Received replication request with message_id: d61ae265-5e97-48e9-a8c7-e001f38acf23, content: Msg2, order: 2
+2025-06-06 13:38:03,839 - INFO - Message replicated: 6c00cc0b-06ba-490b-8ea9-19fead3e2180, Msg1, order=1
+2025-06-06 13:38:03,840 - INFO - Message replicated: d61ae265-5e97-48e9-a8c7-e001f38acf23, Msg2, order=2
+2025-06-06 13:38:03,841 - WARNING - Generating random 500 error for message_id: d61ae265-5e97-48e9-a8c7-e001f38acf23
+2025-06-06 13:38:04,875 - INFO - Received replication request with message_id: d61ae265-5e97-48e9-a8c7-e001f38acf23, content: Msg2, order: 2
+2025-06-06 13:38:04,875 - INFO - Message with message_id: d61ae265-5e97-48e9-a8c7-e001f38acf23 already exists, skipping
+2025-06-06 13:38:05,642 - INFO - Received replication request with message_id: c4e89573-1dc3-42da-8308-b2b3771ec583, content: Msg3, order: 3
+2025-06-06 13:38:05,643 - INFO - Received replication request with message_id: 8e55c79b-ba89-4aa2-940b-0586691a2e95, content: Msg4, order: 4
+2025-06-06 13:38:06,514 - INFO - Starting up, syncing with master
+2025-06-06 13:38:06,561 - INFO - HTTP Request: POST http://master:8000/sync "HTTP/1.1 200 OK"
+2025-06-06 13:38:06,562 - INFO - Synced message: 6c00cc0b-06ba-490b-8ea9-19fead3e2180, Msg1, order=1
+2025-06-06 13:38:06,563 - INFO - Synced message: d61ae265-5e97-48e9-a8c7-e001f38acf23, Msg2, order=2
+2025-06-06 13:38:06,563 - INFO - Synced message: c4e89573-1dc3-42da-8308-b2b3771ec583, Msg3, order=3
+2025-06-06 13:38:06,564 - INFO - Synced message: 8e55c79b-ba89-4aa2-940b-0586691a2e95, Msg4, order=4
+2025-06-06 13:38:06,564 - INFO - Sync completed, max_display_order=4
+2025-06-06 13:38:06,696 - INFO - Received replication request with message_id: 6c00cc0b-06ba-490b-8ea9-19fead3e2180, content: Msg1, order: 4
+2025-06-06 13:38:06,697 - INFO - Message with message_id: 6c00cc0b-06ba-490b-8ea9-19fead3e2180 already exists, skipping
+2025-06-06 13:38:06,698 - INFO - Received replication request with message_id: 8e55c79b-ba89-4aa2-940b-0586691a2e95, content: Msg4, order: 4
+2025-06-06 13:38:06,699 - INFO - Message with message_id: 8e55c79b-ba89-4aa2-940b-0586691a2e95 already exists, skipping
+2025-06-06 13:38:07,643 - INFO - Message replicated: c4e89573-1dc3-42da-8308-b2b3771ec583, Msg3, order=3
+2025-06-06 13:38:07,644 - INFO - Message replicated: 8e55c79b-ba89-4aa2-940b-0586691a2e95, Msg4, order=4
+2025-06-06 13:38:07,681 - INFO - Received replication request with message_id: c4e89573-1dc3-42da-8308-b2b3771ec583, content: Msg3, order: 4
+2025-06-06 13:38:07,681 - INFO - Message with message_id: c4e89573-1dc3-42da-8308-b2b3771ec583 already exists, skipping
+2025-06-06 13:38:09,638 - INFO - Received replication request with message_id: d61ae265-5e97-48e9-a8c7-e001f38acf23, content: Msg2, order: 4
+2025-06-06 13:38:09,639 - INFO - Message with message_id: d61ae265-5e97-48e9-a8c7-e001f38acf23 already exists, skipping
+2025-06-06 13:38:17,701 - INFO - Received GET request for replicated messages
+2025-06-06 13:38:17,702 - INFO - All replicated messages: [('6c00cc0b-06ba-490b-8ea9-19fead3e2180', 'Msg1', 1), ('d61ae265-5e97-48e9-a8c7-e001f38acf23', 'Msg2', 2), ('c4e89573-1dc3-42da-8308-b2b3771ec583', 'Msg3', 3), ('8e55c79b-ba89-4aa2-940b-0586691a2e95', 'Msg4', 4)]
+2025-06-06 13:38:17,702 - WARNING - Skipping message with order 2, max_contiguous_order=1
+2025-06-06 13:38:17,703 - WARNING - Skipping message with order 3, max_contiguous_order=1
+2025-06-06 13:38:17,703 - WARNING - Skipping message with order 4, max_contiguous_order=1
+2025-06-06 13:38:17,703 - INFO - Displayed messages: [('6c00cc0b-06ba-490b-8ea9-19fead3e2180', 'Msg1', 1)]
+2025-06-06 13:42:37,803 - INFO - Starting up, syncing with master
+2025-06-06 13:42:37,847 - INFO - HTTP Request: POST http://master:8000/sync "HTTP/1.1 200 OK"
+2025-06-06 13:42:37,848 - INFO - Sync completed, max_display_order=0
+2025-06-06 13:42:37,848 - INFO - Replicated messages after sync: []
+2025-06-06 13:42:37,871 - INFO - Starting up, syncing with master
+2025-06-06 13:42:37,912 - INFO - HTTP Request: POST http://master:8000/sync "HTTP/1.1 200 OK"
+2025-06-06 13:42:37,914 - INFO - Sync completed, max_display_order=0
+2025-06-06 13:42:37,914 - INFO - Replicated messages after sync: []
+2025-06-06 13:42:46,486 - INFO - Messages cleared
+2025-06-06 13:42:46,495 - INFO - Messages cleared
+2025-06-06 13:42:46,623 - INFO - Received replication request with message_id: a514fd67-3184-4b12-9f7c-19d581b36d8b, content: Test w=1, order: 1
+2025-06-06 13:42:46,623 - INFO - Received replication request with message_id: a514fd67-3184-4b12-9f7c-19d581b36d8b, content: Test w=1, order: 1
+2025-06-06 13:42:48,624 - INFO - Message replicated: a514fd67-3184-4b12-9f7c-19d581b36d8b, Test w=1, order=1
+2025-06-06 13:42:48,624 - INFO - Message replicated: a514fd67-3184-4b12-9f7c-19d581b36d8b, Test w=1, order=1
+2025-06-06 13:42:49,627 - INFO - Received GET request for replicated messages
+2025-06-06 13:42:49,628 - INFO - All replicated messages: [('a514fd67-3184-4b12-9f7c-19d581b36d8b', 'Test w=1', 1)]
+2025-06-06 13:42:49,628 - INFO - Displayed messages: [('a514fd67-3184-4b12-9f7c-19d581b36d8b', 'Test w=1', 1)]
+2025-06-06 13:42:49,632 - INFO - Received GET request for replicated messages
+2025-06-06 13:42:49,632 - INFO - All replicated messages: [('a514fd67-3184-4b12-9f7c-19d581b36d8b', 'Test w=1', 1)]
+2025-06-06 13:42:49,632 - INFO - Displayed messages: [('a514fd67-3184-4b12-9f7c-19d581b36d8b', 'Test w=1', 1)]
+2025-06-06 13:42:49,662 - INFO - Messages cleared
+2025-06-06 13:42:49,668 - INFO - Messages cleared
+2025-06-06 13:42:49,753 - INFO - Received replication request with message_id: 077252e1-1ad1-488d-92ae-38b7e6154c11, content: Test w=2, order: 1
+2025-06-06 13:42:51,753 - INFO - Message replicated: 077252e1-1ad1-488d-92ae-38b7e6154c11, Test w=2, order=1
+2025-06-06 13:42:51,800 - INFO - Received replication request with message_id: 077252e1-1ad1-488d-92ae-38b7e6154c11, content: Test w=2, order: 1
+2025-06-06 13:42:51,801 - INFO - Received GET request for replicated messages
+2025-06-06 13:42:51,801 - INFO - All replicated messages: [('077252e1-1ad1-488d-92ae-38b7e6154c11', 'Test w=2', 1)]
+2025-06-06 13:42:51,801 - INFO - Displayed messages: [('077252e1-1ad1-488d-92ae-38b7e6154c11', 'Test w=2', 1)]
+2025-06-06 13:42:53,800 - INFO - Message replicated: 077252e1-1ad1-488d-92ae-38b7e6154c11, Test w=2, order=1
+2025-06-06 13:42:54,822 - INFO - Received GET request for replicated messages
+2025-06-06 13:42:54,822 - INFO - All replicated messages: [('077252e1-1ad1-488d-92ae-38b7e6154c11', 'Test w=2', 1)]
+2025-06-06 13:42:54,823 - INFO - Displayed messages: [('077252e1-1ad1-488d-92ae-38b7e6154c11', 'Test w=2', 1)]
+2025-06-06 13:42:54,855 - INFO - Messages cleared
+2025-06-06 13:42:54,861 - INFO - Messages cleared
+2025-06-06 13:42:54,939 - INFO - Received replication request with message_id: 84f38e0f-d149-4a42-b606-930a222099aa, content: Test w=3, order: 1
+2025-06-06 13:42:56,940 - INFO - Message replicated: 84f38e0f-d149-4a42-b606-930a222099aa, Test w=3, order=1
+2025-06-06 13:42:56,977 - INFO - Received replication request with message_id: 84f38e0f-d149-4a42-b606-930a222099aa, content: Test w=3, order: 1
+2025-06-06 13:42:58,978 - INFO - Message replicated: 84f38e0f-d149-4a42-b606-930a222099aa, Test w=3, order=1
+2025-06-06 13:43:02,018 - INFO - Received GET request for replicated messages
+2025-06-06 13:43:02,018 - INFO - All replicated messages: [('84f38e0f-d149-4a42-b606-930a222099aa', 'Test w=3', 1)]
+2025-06-06 13:43:02,019 - INFO - Displayed messages: [('84f38e0f-d149-4a42-b606-930a222099aa', 'Test w=3', 1)]
+2025-06-06 13:43:02,025 - INFO - Received GET request for replicated messages
+2025-06-06 13:43:02,025 - INFO - All replicated messages: [('84f38e0f-d149-4a42-b606-930a222099aa', 'Test w=3', 1)]
+2025-06-06 13:43:02,025 - INFO - Displayed messages: [('84f38e0f-d149-4a42-b606-930a222099aa', 'Test w=3', 1)]
+2025-06-06 13:43:02,057 - INFO - Messages cleared
+2025-06-06 13:43:02,063 - INFO - Messages cleared
+2025-06-06 13:43:02,149 - INFO - Received replication request with message_id: e9ed7403-bc89-4ad4-9032-bc1ed26aa982, content: Duplicate test, order: 1
+2025-06-06 13:43:02,149 - WARNING - Generating random 500 error for message_id: e9ed7403-bc89-4ad4-9032-bc1ed26aa982
+2025-06-06 13:43:03,184 - INFO - Received replication request with message_id: e9ed7403-bc89-4ad4-9032-bc1ed26aa982, content: Duplicate test, order: 1
+2025-06-06 13:43:03,184 - WARNING - Generating random 500 error for message_id: e9ed7403-bc89-4ad4-9032-bc1ed26aa982
+2025-06-06 13:43:04,224 - INFO - Received replication request with message_id: e9ed7403-bc89-4ad4-9032-bc1ed26aa982, content: Duplicate test, order: 1
+2025-06-06 13:43:06,226 - INFO - Message replicated: e9ed7403-bc89-4ad4-9032-bc1ed26aa982, Duplicate test, order=1
+2025-06-06 13:43:06,258 - INFO - Received replication request with message_id: e9ed7403-bc89-4ad4-9032-bc1ed26aa982, content: Duplicate test, order: 1
+2025-06-06 13:43:08,259 - INFO - Message replicated: e9ed7403-bc89-4ad4-9032-bc1ed26aa982, Duplicate test, order=1
+2025-06-06 13:43:11,297 - INFO - Received GET request for replicated messages
+2025-06-06 13:43:11,297 - INFO - All replicated messages: [('e9ed7403-bc89-4ad4-9032-bc1ed26aa982', 'Duplicate test', 1)]
+2025-06-06 13:43:11,298 - INFO - Displayed messages: [('e9ed7403-bc89-4ad4-9032-bc1ed26aa982', 'Duplicate test', 1)]
+2025-06-06 13:43:11,304 - INFO - Received GET request for replicated messages
+2025-06-06 13:43:11,304 - INFO - All replicated messages: [('e9ed7403-bc89-4ad4-9032-bc1ed26aa982', 'Duplicate test', 1)]
+2025-06-06 13:43:11,304 - INFO - Displayed messages: [('e9ed7403-bc89-4ad4-9032-bc1ed26aa982', 'Duplicate test', 1)]
+2025-06-06 13:43:11,334 - INFO - Messages cleared
+2025-06-06 13:43:11,341 - INFO - Messages cleared
+2025-06-06 13:43:11,421 - INFO - Received replication request with message_id: 86081102-de68-42d5-b8d5-72706bea62b6, content: First, order: 1
+2025-06-06 13:43:13,421 - INFO - Message replicated: 86081102-de68-42d5-b8d5-72706bea62b6, First, order=1
+2025-06-06 13:43:13,455 - INFO - Received replication request with message_id: 86081102-de68-42d5-b8d5-72706bea62b6, content: First, order: 1
+2025-06-06 13:43:15,456 - INFO - Message replicated: 86081102-de68-42d5-b8d5-72706bea62b6, First, order=1
+2025-06-06 13:43:15,492 - INFO - Received replication request with message_id: c62a0200-4d6d-4505-891f-95384da5fb62, content: Second, order: 2
+2025-06-06 13:43:17,492 - INFO - Message replicated: c62a0200-4d6d-4505-891f-95384da5fb62, Second, order=2
+2025-06-06 13:43:17,526 - INFO - Received replication request with message_id: c62a0200-4d6d-4505-891f-95384da5fb62, content: Second, order: 2
+2025-06-06 13:43:19,527 - INFO - Message replicated: c62a0200-4d6d-4505-891f-95384da5fb62, Second, order=2
+2025-06-06 13:43:19,564 - INFO - Received replication request with message_id: 14296566-ec58-4bf4-95f7-9e7a8792d70e, content: Third, order: 3
+2025-06-06 13:43:21,564 - INFO - Message replicated: 14296566-ec58-4bf4-95f7-9e7a8792d70e, Third, order=3
+2025-06-06 13:43:21,607 - INFO - Received replication request with message_id: 14296566-ec58-4bf4-95f7-9e7a8792d70e, content: Third, order: 3
+2025-06-06 13:43:23,608 - INFO - Message replicated: 14296566-ec58-4bf4-95f7-9e7a8792d70e, Third, order=3
+2025-06-06 13:43:26,631 - INFO - Received GET request for replicated messages
+2025-06-06 13:43:26,631 - INFO - All replicated messages: [('86081102-de68-42d5-b8d5-72706bea62b6', 'First', 1), ('c62a0200-4d6d-4505-891f-95384da5fb62', 'Second', 2), ('14296566-ec58-4bf4-95f7-9e7a8792d70e', 'Third', 3)]
+2025-06-06 13:43:26,632 - INFO - Displayed messages: [('86081102-de68-42d5-b8d5-72706bea62b6', 'First', 1), ('c62a0200-4d6d-4505-891f-95384da5fb62', 'Second', 2), ('14296566-ec58-4bf4-95f7-9e7a8792d70e', 'Third', 3)]
+2025-06-06 13:43:26,638 - INFO - Received GET request for replicated messages
+2025-06-06 13:43:26,639 - INFO - All replicated messages: [('86081102-de68-42d5-b8d5-72706bea62b6', 'First', 1), ('c62a0200-4d6d-4505-891f-95384da5fb62', 'Second', 2), ('14296566-ec58-4bf4-95f7-9e7a8792d70e', 'Third', 3)]
+2025-06-06 13:43:26,639 - INFO - Displayed messages: [('86081102-de68-42d5-b8d5-72706bea62b6', 'First', 1), ('c62a0200-4d6d-4505-891f-95384da5fb62', 'Second', 2), ('14296566-ec58-4bf4-95f7-9e7a8792d70e', 'Third', 3)]
+2025-06-06 13:43:26,670 - INFO - Messages cleared
+2025-06-06 13:43:26,675 - INFO - Messages cleared
+2025-06-06 13:43:27,899 - INFO - Received replication request with message_id: 31b659a4-a651-412b-89ae-8adca3f55403, content: Msg1, order: 1
+2025-06-06 13:43:27,900 - INFO - Received replication request with message_id: 8390c54d-7d04-490f-acbb-bfa2e8205b42, content: Msg2, order: 2
+2025-06-06 13:43:29,900 - INFO - Message replicated: 31b659a4-a651-412b-89ae-8adca3f55403, Msg1, order=1
+2025-06-06 13:43:29,901 - INFO - Message replicated: 8390c54d-7d04-490f-acbb-bfa2e8205b42, Msg2, order=2
+2025-06-06 13:43:31,465 - INFO - Starting up, syncing with master
+2025-06-06 13:43:31,505 - INFO - HTTP Request: POST http://master:8000/sync "HTTP/1.1 200 OK"
+2025-06-06 13:43:31,506 - INFO - Synced message: 31b659a4-a651-412b-89ae-8adca3f55403, Msg1, order=1
+2025-06-06 13:43:31,507 - INFO - Synced message: 8390c54d-7d04-490f-acbb-bfa2e8205b42, Msg2, order=2
+2025-06-06 13:43:31,507 - INFO - Synced message: 1b119efa-701d-42bc-af45-d8cf24971c3b, Msg3, order=3
+2025-06-06 13:43:31,508 - INFO - Synced message: 832c978c-0f4c-42c0-ad33-c2eb7ec93b15, Msg4, order=4
+2025-06-06 13:43:31,508 - INFO - Sync completed, max_display_order=4
+2025-06-06 13:43:31,508 - INFO - Replicated messages after sync: [('31b659a4-a651-412b-89ae-8adca3f55403', 'Msg1', 1), ('8390c54d-7d04-490f-acbb-bfa2e8205b42', 'Msg2', 2), ('1b119efa-701d-42bc-af45-d8cf24971c3b', 'Msg3', 3), ('832c978c-0f4c-42c0-ad33-c2eb7ec93b15', 'Msg4', 4)]
+2025-06-06 13:43:31,746 - INFO - Received replication request with message_id: 1b119efa-701d-42bc-af45-d8cf24971c3b, content: Msg3, order: 3
+2025-06-06 13:43:31,747 - WARNING - Generating random 500 error for message_id: 1b119efa-701d-42bc-af45-d8cf24971c3b
+2025-06-06 13:43:31,748 - INFO - Received replication request with message_id: 832c978c-0f4c-42c0-ad33-c2eb7ec93b15, content: Msg4, order: 4
+2025-06-06 13:43:31,750 - INFO - Received replication request with message_id: 832c978c-0f4c-42c0-ad33-c2eb7ec93b15, content: Msg4, order: 4
+2025-06-06 13:43:31,751 - INFO - Message with message_id: 832c978c-0f4c-42c0-ad33-c2eb7ec93b15 already exists, skipping
+2025-06-06 13:43:32,801 - INFO - Received replication request with message_id: 31b659a4-a651-412b-89ae-8adca3f55403, content: Msg1, order: 4
+2025-06-06 13:43:32,802 - INFO - Message with message_id: 31b659a4-a651-412b-89ae-8adca3f55403 already exists, skipping
+2025-06-06 13:43:32,802 - INFO - Received replication request with message_id: 1b119efa-701d-42bc-af45-d8cf24971c3b, content: Msg3, order: 4
+2025-06-06 13:43:33,747 - INFO - Message replicated: 832c978c-0f4c-42c0-ad33-c2eb7ec93b15, Msg4, order=4
+2025-06-06 13:43:34,803 - INFO - Message replicated: 1b119efa-701d-42bc-af45-d8cf24971c3b, Msg3, order=4
+2025-06-06 13:43:34,853 - INFO - Received replication request with message_id: 8390c54d-7d04-490f-acbb-bfa2e8205b42, content: Msg2, order: 4
+2025-06-06 13:43:34,853 - INFO - Message with message_id: 8390c54d-7d04-490f-acbb-bfa2e8205b42 already exists, skipping
+2025-06-06 13:43:34,855 - INFO - Received replication request with message_id: 1b119efa-701d-42bc-af45-d8cf24971c3b, content: Msg3, order: 4
+2025-06-06 13:43:34,855 - INFO - Message with message_id: 1b119efa-701d-42bc-af45-d8cf24971c3b already exists, skipping
+2025-06-06 13:43:44,886 - INFO - Received GET request for replicated messages
+2025-06-06 13:43:44,887 - INFO - All replicated messages: [('31b659a4-a651-412b-89ae-8adca3f55403', 'Msg1', 1), ('8390c54d-7d04-490f-acbb-bfa2e8205b42', 'Msg2', 2), ('1b119efa-701d-42bc-af45-d8cf24971c3b', 'Msg3', 3), ('832c978c-0f4c-42c0-ad33-c2eb7ec93b15', 'Msg4', 4)]
+2025-06-06 13:43:44,887 - INFO - Displayed messages: [('31b659a4-a651-412b-89ae-8adca3f55403', 'Msg1', 1), ('8390c54d-7d04-490f-acbb-bfa2e8205b42', 'Msg2', 2), ('1b119efa-701d-42bc-af45-d8cf24971c3b', 'Msg3', 3), ('832c978c-0f4c-42c0-ad33-c2eb7ec93b15', 'Msg4', 4)]

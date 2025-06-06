@@ -1,0 +1,42 @@
+version: '3.8'
+services:
+  master:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./master.py:/app/master.py
+      - ./logs:/app/logs
+    command: uvicorn master:app --host 0.0.0.0 --port 8000
+  secondary1:
+    build: .
+    ports:
+      - "8001:8001"
+    volumes:
+      - ./secondary.py:/app/secondary.py
+      - ./logs:/app/logs
+    command: uvicorn secondary:app --host 0.0.0.0 --port 8001
+    depends_on:
+      - master
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8001/messages"]
+      interval: 5s
+      timeout: 3s
+      retries: 3
+      start_period: 10s
+  secondary2:
+    build: .
+    ports:
+      - "8002:8001"
+    volumes:
+      - ./secondary.py:/app/secondary.py
+      - ./logs:/app/logs
+    command: uvicorn secondary:app --host 0.0.0.0 --port 8001
+    depends_on:
+      - master
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8001/messages"]
+      interval: 5s
+      timeout: 3s
+      retries: 3
+      start_period: 10s

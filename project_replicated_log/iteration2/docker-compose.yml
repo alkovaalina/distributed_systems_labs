@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  master:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./master.py:/app/master.py
+    environment:
+      - PYTHONUNBUFFERED=1
+
+  secondary1:
+    build: .
+    ports:
+      - "8001:8001"
+    volumes:
+      - ./secondary.py:/app/secondary.py
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: ["uvicorn", "secondary:app", "--host", "0.0.0.0", "--port", "8001"]
+
+  secondary2:
+    build: .
+    ports:
+      - "8002:8001"
+    volumes:
+      - ./secondary.py:/app/secondary.py
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: ["uvicorn", "secondary:app", "--host", "0.0.0.0", "--port", "8001"]

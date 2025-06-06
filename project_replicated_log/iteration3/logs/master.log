@@ -1,0 +1,538 @@
+2025-06-06 13:04:50,731 - INFO - Received sync request with last_message_id: None
+2025-06-06 13:04:50,978 - INFO - Received sync request with last_message_id: None
+2025-06-06 13:05:28,700 - INFO - Received POST request with message_id: 22f1bdf2-4665-4f32-b136-f5090037fc6a, content: Test w=1, w: 1
+2025-06-06 13:05:28,764 - INFO - Received GET request for messages
+2025-06-06 13:05:30,772 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:05:30,773 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:05:30,774 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 500 Internal Server Error"
+2025-06-06 13:05:30,785 - WARNING - Internal server error from http://secondary2:8001, retrying after 1s
+2025-06-06 13:05:31,816 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:05:31,817 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:05:31,899 - INFO - Received POST request with message_id: 64c99638-41cf-4946-82b5-dd2404a8aa69, content: Test w=2, w: 2
+2025-06-06 13:05:33,935 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:05:33,936 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:05:33,965 - INFO - Received GET request for messages
+2025-06-06 13:05:35,971 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:05:35,972 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:05:37,079 - INFO - Received POST request with message_id: 8422b750-b5d6-4ea3-ad4e-b0bc0b0722ad, content: Test w=3, w: 3
+2025-06-06 13:05:39,114 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 500 Internal Server Error"
+2025-06-06 13:05:39,115 - WARNING - Internal server error from http://secondary1:8001, retrying after 1s
+2025-06-06 13:05:40,149 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:05:40,150 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:05:42,196 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:05:42,197 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:05:42,509 - INFO - Received POST request with message_id: c93db82c-a1cc-4013-b015-8c986fcc26aa, content: Duplicate test, w: 3
+2025-06-06 13:05:44,543 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:05:44,544 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:05:46,584 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:05:46,585 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:05:46,591 - INFO - Message with content: Duplicate test already exists
+2025-06-06 13:05:46,595 - INFO - Received GET request for messages
+2025-06-06 13:05:49,719 - INFO - Received POST request with message_id: 7cdc7fe6-8ae2-4b47-8377-e820acb67ed8, content: First, w: 3
+2025-06-06 13:05:51,752 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:05:51,753 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:05:53,787 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:05:53,788 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:05:53,792 - INFO - Received POST request with message_id: 1955b8d4-50c4-4e94-b750-5b624f542bff, content: Second, w: 3
+2025-06-06 13:05:55,825 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:05:55,826 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:05:57,857 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:05:57,858 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:05:57,863 - INFO - Received POST request with message_id: fa7ecfe5-0e2f-4475-9013-73f72b191920, content: Third, w: 3
+2025-06-06 13:05:59,898 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:05:59,899 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:06:01,941 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:06:01,943 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:06:04,951 - INFO - Received GET request for messages
+2025-06-06 13:06:06,229 - INFO - Received POST request with message_id: c0949417-3a38-467d-b617-74960dd56bea, content: Msg1, w: 1
+2025-06-06 13:06:06,334 - INFO - Received POST request with message_id: 6e788650-ce4b-476a-8195-fcf325ff39ad, content: Msg2, w: 2
+2025-06-06 13:06:08,415 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 500 Internal Server Error"
+2025-06-06 13:06:08,416 - WARNING - Internal server error from http://secondary1:8001, retrying after 1s
+2025-06-06 13:06:08,418 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:06:08,419 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:06:08,467 - INFO - Received POST request with message_id: 26466cb2-a4c7-4d15-95d1-ded28eb488d4, content: Msg4, w: 1
+2025-06-06 13:06:08,582 - INFO - Received POST request with message_id: fa5151c4-031d-4e83-8511-7f1cddccdb6f, content: Msg3, w: 3
+2025-06-06 13:06:10,202 - ERROR - Error replicating to http://secondary2:8001: [Errno -2] Name or service not known
+2025-06-06 13:06:10,207 - ERROR - Error replicating to http://secondary2:8001: All connection attempts failed
+2025-06-06 13:06:10,225 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:06:10,226 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:06:10,568 - INFO - Received sync request with last_message_id: None
+2025-06-06 13:06:11,290 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:06:11,295 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:06:11,298 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:06:11,300 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:06:12,216 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:06:12,217 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:06:12,222 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:06:12,223 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:06:12,259 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:06:12,260 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:06:12,326 - ERROR - Error replicating to http://secondary2:8001: [Errno -2] Name or service not known
+2025-06-06 13:06:13,370 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:06:13,371 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:11:31,440 - INFO - Received sync request with last_message_id: None
+2025-06-06 13:11:31,665 - INFO - Received sync request with last_message_id: None
+2025-06-06 13:12:22,253 - INFO - Messages cleared
+2025-06-06 13:12:22,315 - INFO - Received POST request with message_id: c4a550cc-72e5-45f0-9697-05d117b7c4e1, content: Test w=1, w: 1
+2025-06-06 13:12:22,379 - INFO - Received GET request for messages
+2025-06-06 13:12:24,386 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:12:24,387 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:12:24,388 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:12:24,389 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:12:25,419 - INFO - Messages cleared
+2025-06-06 13:12:25,485 - INFO - Received POST request with message_id: fbd689d9-fcbb-4e4a-9543-7973cfbfd90d, content: Test w=2, w: 2
+2025-06-06 13:12:27,521 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:12:27,522 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:12:27,552 - INFO - Received GET request for messages
+2025-06-06 13:12:29,557 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:12:29,558 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:12:30,589 - INFO - Messages cleared
+2025-06-06 13:12:30,655 - INFO - Received POST request with message_id: 02f1637e-f844-437d-8490-c51fd1abd9f5, content: Test w=3, w: 3
+2025-06-06 13:12:32,686 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 500 Internal Server Error"
+2025-06-06 13:12:32,686 - WARNING - Internal server error from http://secondary1:8001, retrying after 1s
+2025-06-06 13:12:33,721 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:12:33,722 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:12:35,757 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 500 Internal Server Error"
+2025-06-06 13:12:35,758 - WARNING - Internal server error from http://secondary2:8001, retrying after 1s
+2025-06-06 13:12:36,791 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:12:36,792 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:12:36,797 - INFO - Received GET request for messages
+2025-06-06 13:12:36,845 - INFO - Messages cleared
+2025-06-06 13:12:36,924 - INFO - Received POST request with message_id: 4aae7563-e91a-4f35-8d21-127321b2fcca, content: Duplicate test, w: 3
+2025-06-06 13:12:38,965 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:12:38,966 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:12:40,997 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:12:40,998 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:12:41,003 - INFO - Message with content: Duplicate test already exists
+2025-06-06 13:12:41,005 - INFO - Received GET request for messages
+2025-06-06 13:12:44,057 - INFO - Messages cleared
+2025-06-06 13:12:44,124 - INFO - Received POST request with message_id: a0ade966-0695-4bdf-90e4-37ffc26caf0c, content: First, w: 3
+2025-06-06 13:12:46,157 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 500 Internal Server Error"
+2025-06-06 13:12:46,158 - WARNING - Internal server error from http://secondary1:8001, retrying after 1s
+2025-06-06 13:12:47,192 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:12:47,193 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:12:49,226 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:12:49,227 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:12:49,374 - INFO - Messages cleared
+2025-06-06 13:12:50,434 - INFO - Received POST request with message_id: fa7b20d9-9af7-4048-8973-498d6a82a9cf, content: Msg1, w: 1
+2025-06-06 13:12:50,524 - INFO - Received POST request with message_id: 71582666-867f-4cea-a167-6a2aa43623c1, content: Msg2, w: 2
+2025-06-06 13:12:52,576 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:12:52,577 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:12:52,578 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 500 Internal Server Error"
+2025-06-06 13:12:52,579 - WARNING - Internal server error from http://secondary1:8001, retrying after 1s
+2025-06-06 13:12:53,611 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:12:53,612 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:12:53,641 - INFO - Received POST request with message_id: 81a7faa4-d8e0-4cbc-b9ea-95ff557a8b1c, content: Msg4, w: 1
+2025-06-06 13:12:53,710 - INFO - Received POST request with message_id: d63b03ae-bd5d-44f4-820a-f69212aa2472, content: Msg3, w: 3
+2025-06-06 13:12:54,390 - ERROR - Error replicating to http://secondary2:8001: [Errno -2] Name or service not known
+2025-06-06 13:12:54,394 - ERROR - Error replicating to http://secondary2:8001: All connection attempts failed
+2025-06-06 13:12:55,117 - INFO - Received sync request with last_message_id: None
+2025-06-06 13:12:55,452 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:12:55,453 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:12:55,454 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:12:55,455 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:12:56,398 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:12:56,399 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:12:56,405 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:12:56,406 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:12:56,437 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:12:56,438 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:12:57,348 - ERROR - Error replicating to http://secondary2:8001: [Errno -2] Name or service not known
+2025-06-06 13:12:58,382 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:12:58,383 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:18:15,603 - INFO - Received sync request with last_message_id: None
+2025-06-06 13:18:15,819 - INFO - Received sync request with last_message_id: None
+2025-06-06 13:19:31,165 - INFO - Messages cleared
+2025-06-06 13:19:31,230 - INFO - Received POST request with message_id: 883be2df-6ea7-4a34-b534-436b54c9c7cd, content: Test w=1, w: 1
+2025-06-06 13:19:31,293 - INFO - Received GET request for messages
+2025-06-06 13:19:31,799 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:19:31,800 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:19:31,801 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:19:31,802 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:19:34,327 - INFO - Messages cleared
+2025-06-06 13:19:34,389 - INFO - Received POST request with message_id: 1c481d7d-7053-40d2-b12f-384d44e107cf, content: Test w=2, w: 2
+2025-06-06 13:19:34,924 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:19:34,925 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:19:35,078 - INFO - Messages cleared
+2025-06-06 13:19:35,139 - INFO - Received POST request with message_id: f2e9c3f2-28ef-4b14-82fe-6305f76df4dd, content: Test w=3, w: 3
+2025-06-06 13:19:35,472 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 500 Internal Server Error"
+2025-06-06 13:19:35,472 - WARNING - Internal server error from http://secondary2:8001, retrying after 1s
+2025-06-06 13:19:35,671 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:19:35,672 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:19:36,205 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:19:36,206 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:19:36,240 - INFO - Messages cleared
+2025-06-06 13:19:36,299 - INFO - Received POST request with message_id: b81dda5c-019f-438a-9674-4c3f32c2ef98, content: Duplicate test, w: 3
+2025-06-06 13:19:36,833 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 500 Internal Server Error"
+2025-06-06 13:19:36,835 - WARNING - Internal server error from http://secondary1:8001, retrying after 1s
+2025-06-06 13:19:37,009 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:19:37,011 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:19:37,875 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:19:37,875 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:19:38,408 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:19:38,409 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:19:38,413 - INFO - Message with content: Duplicate test already exists
+2025-06-06 13:19:38,417 - INFO - Received GET request for messages
+2025-06-06 13:19:41,462 - INFO - Messages cleared
+2025-06-06 13:19:41,519 - INFO - Received POST request with message_id: 3264934d-0280-42b0-b5b0-dc27d6a9b68a, content: First, w: 3
+2025-06-06 13:19:42,053 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:19:42,054 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:19:42,587 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:19:42,589 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:19:42,593 - INFO - Received POST request with message_id: d8738fdf-c58c-4e8b-b41a-e52468ecb4e6, content: Second, w: 3
+2025-06-06 13:19:43,126 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:19:43,127 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:19:43,660 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:19:43,661 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:19:43,665 - INFO - Received POST request with message_id: 2f8a7e72-2ca6-40e9-ab0d-0a83f77f9a84, content: Third, w: 3
+2025-06-06 13:19:44,200 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:19:44,201 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:19:44,744 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:19:44,745 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:19:47,750 - INFO - Received GET request for messages
+2025-06-06 13:19:47,787 - INFO - Messages cleared
+2025-06-06 13:19:48,849 - INFO - Received POST request with message_id: 31858c39-c108-4708-bbca-732a7ed898a5, content: Msg1, w: 1
+2025-06-06 13:19:48,931 - INFO - Received POST request with message_id: f7fe0ec0-e718-4561-8369-723d96a47788, content: Msg2, w: 2
+2025-06-06 13:19:49,464 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:19:49,465 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:19:49,466 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:19:49,467 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:19:49,496 - INFO - Received POST request with message_id: 619a69d9-bdd7-4614-b427-ed8e822203a3, content: Msg4, w: 1
+2025-06-06 13:19:49,560 - INFO - Received POST request with message_id: 5bbec469-042a-4eae-b111-88ad5e3d691c, content: Msg3, w: 3
+2025-06-06 13:19:50,987 - INFO - Received sync request with last_message_id: None
+2025-06-06 13:19:52,794 - ERROR - Error replicating to http://secondary2:8001: [Errno -2] Name or service not known
+2025-06-06 13:19:52,800 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:19:52,801 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:19:53,300 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 500 Internal Server Error"
+2025-06-06 13:19:53,301 - WARNING - Internal server error from http://secondary1:8001, retrying after 1s
+2025-06-06 13:19:53,302 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 500 Internal Server Error"
+2025-06-06 13:19:53,302 - WARNING - Internal server error from http://secondary1:8001, retrying after 1s
+2025-06-06 13:19:53,353 - ERROR - Error replicating to http://secondary2:8001: [Errno -2] Name or service not known
+2025-06-06 13:19:53,827 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:19:53,828 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:19:54,390 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:19:54,391 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:19:54,392 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:19:54,420 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:19:54,421 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:19:54,422 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:19:54,426 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:19:54,427 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:23:18,255 - INFO - Received sync request with last_message_id: None
+2025-06-06 13:23:27,038 - INFO - Messages cleared
+2025-06-06 13:23:27,111 - INFO - Received POST request with message_id: 0cc5618d-fcc8-4035-ad76-344e2925fbf4, content: Test w=1, w: 1
+2025-06-06 13:23:27,197 - INFO - Received GET request for messages
+2025-06-06 13:23:29,205 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:23:29,207 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:23:29,208 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:23:29,208 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:23:30,248 - INFO - Messages cleared
+2025-06-06 13:23:30,321 - INFO - Received POST request with message_id: e3f1f534-2678-438b-bcec-d0eb3b675e5e, content: Test w=2, w: 2
+2025-06-06 13:23:32,358 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 500 Internal Server Error"
+2025-06-06 13:23:32,360 - WARNING - Internal server error from http://secondary1:8001, retrying after 1s
+2025-06-06 13:23:33,391 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:23:33,392 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:23:33,548 - INFO - Messages cleared
+2025-06-06 13:23:33,620 - INFO - Received POST request with message_id: bfdeae40-c37d-48db-8137-6bc6059f4c08, content: Test w=3, w: 3
+2025-06-06 13:23:35,436 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:23:35,437 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:23:35,657 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:23:35,658 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:23:37,704 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:23:37,705 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:23:37,710 - INFO - Received GET request for messages
+2025-06-06 13:23:37,764 - INFO - Messages cleared
+2025-06-06 13:23:37,840 - INFO - Received POST request with message_id: c3de9d96-7718-41c1-ae96-c6602ce3eb9a, content: Duplicate test, w: 3
+2025-06-06 13:23:39,873 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:23:39,874 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:23:41,919 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:23:41,920 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:23:41,925 - INFO - Message with content: Duplicate test already exists
+2025-06-06 13:23:41,929 - INFO - Received GET request for messages
+2025-06-06 13:23:44,983 - INFO - Messages cleared
+2025-06-06 13:23:45,050 - INFO - Received POST request with message_id: 7e87d077-7d67-44d9-a967-8032bcb4d339, content: First, w: 3
+2025-06-06 13:23:47,106 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:23:47,107 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:23:49,141 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:23:49,142 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:23:49,146 - INFO - Received POST request with message_id: b894eff2-4510-484c-a003-9076a40ef20b, content: Second, w: 3
+2025-06-06 13:23:51,177 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:23:51,178 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:23:53,212 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 500 Internal Server Error"
+2025-06-06 13:23:53,213 - WARNING - Internal server error from http://secondary2:8001, retrying after 1s
+2025-06-06 13:23:54,244 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:23:54,245 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:23:54,329 - INFO - Messages cleared
+2025-06-06 13:23:55,440 - INFO - Received POST request with message_id: 08460e30-e422-464f-993a-b421c25aa1a6, content: Msg1, w: 1
+2025-06-06 13:23:55,520 - INFO - Received POST request with message_id: 9a50496e-d6d1-41f6-96d4-65545e06b147, content: Msg2, w: 2
+2025-06-06 13:23:57,589 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 500 Internal Server Error"
+2025-06-06 13:23:57,590 - WARNING - Internal server error from http://secondary1:8001, retrying after 1s
+2025-06-06 13:23:57,591 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:23:57,592 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:23:57,621 - INFO - Received POST request with message_id: 506e3257-80e8-422c-ade5-8b383175432b, content: Msg4, w: 1
+2025-06-06 13:23:57,679 - INFO - Received POST request with message_id: 7d36b29b-cbad-416e-a191-b17852f5d18b, content: Msg3, w: 3
+2025-06-06 13:23:59,092 - INFO - Received sync request with last_message_id: None
+2025-06-06 13:23:59,387 - ERROR - Error replicating to http://secondary2:8001: [Errno -2] Name or service not known
+2025-06-06 13:23:59,394 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:23:59,395 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:23:59,395 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:23:59,396 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:24:00,420 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:24:00,420 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:24:01,393 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:24:01,394 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:24:01,395 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:24:01,396 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:24:01,428 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:24:01,428 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:24:01,476 - ERROR - Error replicating to http://secondary2:8001: [Errno -2] Name or service not known
+2025-06-06 13:24:02,510 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:24:02,511 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:29:36,193 - INFO - Received sync request with last_message_id: None
+2025-06-06 13:29:36,421 - INFO - Received sync request with last_message_id: None
+2025-06-06 13:30:06,617 - INFO - Received sync request with last_message_id: None
+2025-06-06 13:30:06,771 - INFO - Received sync request with last_message_id: None
+2025-06-06 13:30:11,112 - INFO - Messages cleared
+2025-06-06 13:30:11,186 - INFO - Received POST request with message_id: ec151708-af34-45e0-81b4-43b165d62f81, content: Test w=1, w: 1
+2025-06-06 13:30:11,273 - INFO - Received GET request for messages
+2025-06-06 13:30:13,280 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:30:13,281 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:30:13,282 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:30:13,283 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:30:14,313 - INFO - Messages cleared
+2025-06-06 13:30:14,376 - INFO - Received POST request with message_id: 1ee339da-b753-4d4a-8980-56841e9980b9, content: Test w=2, w: 2
+2025-06-06 13:30:16,412 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 500 Internal Server Error"
+2025-06-06 13:30:16,413 - WARNING - Internal server error from http://secondary1:8001, retrying after 1s
+2025-06-06 13:30:17,445 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:30:17,446 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:30:17,477 - INFO - Received GET request for messages
+2025-06-06 13:30:19,482 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:30:19,483 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:30:20,528 - INFO - Messages cleared
+2025-06-06 13:30:20,586 - INFO - Received POST request with message_id: f5a911d9-28a5-417a-aae4-4570ac7b7828, content: Test w=3, w: 3
+2025-06-06 13:30:22,621 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:30:22,622 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:30:24,656 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:30:24,657 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:30:24,662 - INFO - Received GET request for messages
+2025-06-06 13:30:27,732 - INFO - Messages cleared
+2025-06-06 13:30:27,806 - INFO - Received POST request with message_id: 20024c61-c3d9-49a5-a103-56ab85ec759e, content: Duplicate test, w: 3
+2025-06-06 13:30:29,847 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 500 Internal Server Error"
+2025-06-06 13:30:29,848 - WARNING - Internal server error from http://secondary1:8001, retrying after 1s
+2025-06-06 13:30:30,882 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:30:30,883 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:30:32,932 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 500 Internal Server Error"
+2025-06-06 13:30:32,933 - WARNING - Internal server error from http://secondary2:8001, retrying after 1s
+2025-06-06 13:30:33,966 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:30:33,967 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:30:33,972 - INFO - Message with content: Duplicate test already exists
+2025-06-06 13:30:33,975 - INFO - Received GET request for messages
+2025-06-06 13:30:37,024 - INFO - Messages cleared
+2025-06-06 13:30:37,085 - INFO - Received POST request with message_id: 057a1f8f-8310-464f-9952-f586d213bd5a, content: First, w: 3
+2025-06-06 13:30:39,119 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:30:39,120 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:30:41,155 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:30:41,156 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:30:41,159 - INFO - Received POST request with message_id: c87ad9a5-b26c-4e7f-8299-cb6207cc5289, content: Second, w: 3
+2025-06-06 13:30:43,192 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:30:43,193 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:30:45,226 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:30:45,227 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:30:45,232 - INFO - Received POST request with message_id: 2afee362-7a6f-4869-ab3f-0266394ac300, content: Third, w: 3
+2025-06-06 13:30:47,265 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:30:47,266 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:30:49,309 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:30:49,310 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:30:52,325 - INFO - Received GET request for messages
+2025-06-06 13:30:52,375 - INFO - Messages cleared
+2025-06-06 13:30:53,405 - INFO - Received POST request with message_id: 012d2d52-cd9d-46fa-97de-78336459fb86, content: Msg1, w: 1
+2025-06-06 13:30:53,471 - INFO - Received POST request with message_id: c60effed-e33a-4a3e-84fa-3e8743ddc1cf, content: Msg2, w: 2
+2025-06-06 13:30:55,512 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:30:55,513 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:30:55,514 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 500 Internal Server Error"
+2025-06-06 13:30:55,515 - WARNING - Internal server error from http://secondary1:8001, retrying after 1s
+2025-06-06 13:30:56,546 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:30:56,547 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:30:56,576 - INFO - Received POST request with message_id: beeb2b01-f5d6-4d76-83c1-ab640bbf370c, content: Msg4, w: 1
+2025-06-06 13:30:56,650 - INFO - Received POST request with message_id: 4a071119-2543-487d-ac9a-fff51c7cc753, content: Msg3, w: 3
+2025-06-06 13:30:57,332 - ERROR - Error replicating to http://secondary2:8001: [Errno -2] Name or service not known
+2025-06-06 13:30:57,334 - ERROR - Error replicating to http://secondary2:8001: All connection attempts failed
+2025-06-06 13:30:58,031 - INFO - Received sync request with last_message_id: None
+2025-06-06 13:30:58,392 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:30:58,393 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:30:58,394 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:30:58,394 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:30:59,339 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:30:59,340 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:30:59,341 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:30:59,368 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:30:59,374 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:30:59,374 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:31:00,306 - ERROR - Error replicating to http://secondary2:8001: [Errno -2] Name or service not known
+2025-06-06 13:31:01,340 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:31:01,341 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:35:41,761 - INFO - Received sync request with last_message_id: None
+2025-06-06 13:35:41,863 - INFO - Received sync request with last_message_id: None
+2025-06-06 13:37:22,401 - INFO - Messages cleared
+2025-06-06 13:37:22,402 - INFO - Messages after clear: [], message_order: 0
+2025-06-06 13:37:22,470 - INFO - Received POST request with message_id: cc0490b3-1174-488d-9303-223557bd7347, content: Test w=1, w: 1
+2025-06-06 13:37:22,545 - INFO - Received GET request for messages
+2025-06-06 13:37:24,554 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:37:24,555 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:37:24,555 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:37:24,556 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:37:25,592 - INFO - Messages cleared
+2025-06-06 13:37:25,593 - INFO - Messages after clear: [], message_order: 0
+2025-06-06 13:37:25,660 - INFO - Received POST request with message_id: d4ff874f-6c16-4128-839a-c8927b698e63, content: Test w=2, w: 2
+2025-06-06 13:37:27,702 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:37:27,703 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:37:27,731 - INFO - Received GET request for messages
+2025-06-06 13:37:29,735 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:37:29,736 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:37:30,780 - INFO - Messages cleared
+2025-06-06 13:37:30,780 - INFO - Messages after clear: [], message_order: 0
+2025-06-06 13:37:30,840 - INFO - Received POST request with message_id: d1ad0660-424c-4ea9-8e67-1ccc5e7865ff, content: Test w=3, w: 3
+2025-06-06 13:37:32,875 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:37:32,876 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:37:34,920 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:37:34,921 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:37:34,925 - INFO - Received GET request for messages
+2025-06-06 13:37:37,977 - INFO - Messages cleared
+2025-06-06 13:37:37,978 - INFO - Messages after clear: [], message_order: 0
+2025-06-06 13:37:38,040 - INFO - Received POST request with message_id: 05146c25-0a92-4557-acb0-a27c2fd2b992, content: Duplicate test, w: 3
+2025-06-06 13:37:40,073 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:37:40,074 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:37:42,108 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:37:42,109 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:37:42,113 - INFO - Message with content: Duplicate test already exists
+2025-06-06 13:37:42,116 - INFO - Received GET request for messages
+2025-06-06 13:37:45,166 - INFO - Messages cleared
+2025-06-06 13:37:45,167 - INFO - Messages after clear: [], message_order: 0
+2025-06-06 13:37:45,230 - INFO - Received POST request with message_id: 375dad25-4290-41f5-be96-7400c6fd96f3, content: First, w: 3
+2025-06-06 13:37:47,272 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:37:47,273 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:37:49,307 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:37:49,308 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:37:49,312 - INFO - Received POST request with message_id: f80d1375-10af-4b5d-94db-149fe2c3ef7e, content: Second, w: 3
+2025-06-06 13:37:51,344 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:37:51,346 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:37:53,380 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:37:53,381 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:37:53,385 - INFO - Received POST request with message_id: de811701-5b49-441e-9795-5f626c05e224, content: Third, w: 3
+2025-06-06 13:37:55,422 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:37:55,423 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:37:57,457 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:37:57,458 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:38:00,473 - INFO - Received GET request for messages
+2025-06-06 13:38:00,630 - INFO - Messages cleared
+2025-06-06 13:38:00,631 - INFO - Messages after clear: [], message_order: 0
+2025-06-06 13:38:01,720 - INFO - Received POST request with message_id: 6c00cc0b-06ba-490b-8ea9-19fead3e2180, content: Msg1, w: 1
+2025-06-06 13:38:01,804 - INFO - Received POST request with message_id: d61ae265-5e97-48e9-a8c7-e001f38acf23, content: Msg2, w: 2
+2025-06-06 13:38:03,841 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:38:03,842 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:38:03,844 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 500 Internal Server Error"
+2025-06-06 13:38:03,845 - WARNING - Internal server error from http://secondary1:8001, retrying after 1s
+2025-06-06 13:38:04,876 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:38:04,877 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:38:04,905 - INFO - Received POST request with message_id: c4e89573-1dc3-42da-8308-b2b3771ec583, content: Msg3, w: 3
+2025-06-06 13:38:04,994 - INFO - Received POST request with message_id: 8e55c79b-ba89-4aa2-940b-0586691a2e95, content: Msg4, w: 1
+2025-06-06 13:38:05,635 - ERROR - Error replicating to http://secondary2:8001: [Errno -2] Name or service not known
+2025-06-06 13:38:05,640 - ERROR - Error replicating to http://secondary2:8001: All connection attempts failed
+2025-06-06 13:38:06,558 - INFO - Received sync request with last_message_id: None
+2025-06-06 13:38:06,698 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:38:06,699 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:38:06,701 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:38:06,701 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:38:07,644 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:38:07,646 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:38:07,646 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:38:07,678 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:38:07,682 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:38:07,683 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:38:08,607 - ERROR - Error replicating to http://secondary2:8001: [Errno -2] Name or service not known
+2025-06-06 13:38:09,640 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:38:09,641 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:42:37,845 - INFO - Received sync request with last_message_id: None
+2025-06-06 13:42:37,910 - INFO - Received sync request with last_message_id: None
+2025-06-06 13:42:46,477 - INFO - Messages cleared
+2025-06-06 13:42:46,477 - INFO - Messages after clear: [], message_order: 0
+2025-06-06 13:42:46,549 - INFO - Received POST request with message_id: a514fd67-3184-4b12-9f7c-19d581b36d8b, content: Test w=1, w: 1
+2025-06-06 13:42:46,619 - INFO - Received GET request for messages
+2025-06-06 13:42:48,626 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:42:48,627 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:42:48,628 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:42:48,629 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:42:49,656 - INFO - Messages cleared
+2025-06-06 13:42:49,657 - INFO - Messages after clear: [], message_order: 0
+2025-06-06 13:42:49,719 - INFO - Received POST request with message_id: 077252e1-1ad1-488d-92ae-38b7e6154c11, content: Test w=2, w: 2
+2025-06-06 13:42:51,755 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:42:51,756 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:42:51,796 - INFO - Received GET request for messages
+2025-06-06 13:42:53,802 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:42:53,803 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:42:54,849 - INFO - Messages cleared
+2025-06-06 13:42:54,849 - INFO - Messages after clear: [], message_order: 0
+2025-06-06 13:42:54,909 - INFO - Received POST request with message_id: 84f38e0f-d149-4a42-b606-930a222099aa, content: Test w=3, w: 3
+2025-06-06 13:42:56,942 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:42:56,943 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:42:58,980 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:42:58,981 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:42:58,985 - INFO - Received GET request for messages
+2025-06-06 13:43:02,049 - INFO - Messages cleared
+2025-06-06 13:43:02,050 - INFO - Messages after clear: [], message_order: 0
+2025-06-06 13:43:02,118 - INFO - Received POST request with message_id: e9ed7403-bc89-4ad4-9032-bc1ed26aa982, content: Duplicate test, w: 3
+2025-06-06 13:43:02,151 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 500 Internal Server Error"
+2025-06-06 13:43:02,151 - WARNING - Internal server error from http://secondary1:8001, retrying after 1s
+2025-06-06 13:43:03,186 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 500 Internal Server Error"
+2025-06-06 13:43:03,186 - WARNING - Internal server error from http://secondary1:8001, retrying after 1s
+2025-06-06 13:43:06,228 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:43:06,229 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:43:08,260 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:43:08,261 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:43:08,276 - INFO - Message with content: Duplicate test already exists
+2025-06-06 13:43:08,279 - INFO - Received GET request for messages
+2025-06-06 13:43:11,328 - INFO - Messages cleared
+2025-06-06 13:43:11,328 - INFO - Messages after clear: [], message_order: 0
+2025-06-06 13:43:11,388 - INFO - Received POST request with message_id: 86081102-de68-42d5-b8d5-72706bea62b6, content: First, w: 3
+2025-06-06 13:43:13,423 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:43:13,424 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:43:15,457 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:43:15,458 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:43:15,462 - INFO - Received POST request with message_id: c62a0200-4d6d-4505-891f-95384da5fb62, content: Second, w: 3
+2025-06-06 13:43:17,494 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:43:17,495 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:43:19,529 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:43:19,530 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:43:19,534 - INFO - Received POST request with message_id: 14296566-ec58-4bf4-95f7-9e7a8792d70e, content: Third, w: 3
+2025-06-06 13:43:21,566 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:43:21,567 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:43:23,610 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:43:23,611 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:43:26,623 - INFO - Received GET request for messages
+2025-06-06 13:43:26,664 - INFO - Messages cleared
+2025-06-06 13:43:26,664 - INFO - Messages after clear: [], message_order: 0
+2025-06-06 13:43:27,778 - INFO - Received POST request with message_id: 31b659a4-a651-412b-89ae-8adca3f55403, content: Msg1, w: 1
+2025-06-06 13:43:27,861 - INFO - Received POST request with message_id: 8390c54d-7d04-490f-acbb-bfa2e8205b42, content: Msg2, w: 2
+2025-06-06 13:43:29,902 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:43:29,903 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:43:29,904 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:43:29,905 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:43:29,936 - INFO - Received POST request with message_id: 1b119efa-701d-42bc-af45-d8cf24971c3b, content: Msg3, w: 3
+2025-06-06 13:43:30,020 - INFO - Received POST request with message_id: 832c978c-0f4c-42c0-ad33-c2eb7ec93b15, content: Msg4, w: 1
+2025-06-06 13:43:31,503 - INFO - Received sync request with last_message_id: None
+2025-06-06 13:43:31,743 - ERROR - Error replicating to http://secondary2:8001: [Errno -2] Name or service not known
+2025-06-06 13:43:31,748 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 500 Internal Server Error"
+2025-06-06 13:43:31,749 - WARNING - Internal server error from http://secondary1:8001, retrying after 1s
+2025-06-06 13:43:31,752 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:43:31,753 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:43:32,803 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:43:32,804 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:43:33,749 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:43:33,750 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:43:33,794 - ERROR - Error replicating to http://secondary2:8001: [Errno -2] Name or service not known
+2025-06-06 13:43:34,823 - INFO - HTTP Request: POST http://secondary1:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:43:34,824 - INFO - Successfully replicated to http://secondary1:8001
+2025-06-06 13:43:34,855 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:43:34,856 - INFO - Successfully replicated to http://secondary2:8001
+2025-06-06 13:43:34,857 - INFO - HTTP Request: POST http://secondary2:8001/replicate "HTTP/1.1 200 OK"
+2025-06-06 13:43:34,858 - INFO - Successfully replicated to http://secondary2:8001
